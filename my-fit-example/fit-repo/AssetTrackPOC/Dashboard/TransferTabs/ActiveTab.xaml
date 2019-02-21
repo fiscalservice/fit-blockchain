@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AssetTrackPOC.Dashboard.TransferTabs.ActiveTab">
+    <ScrollView>
+        <RelativeLayout x:Name ="activeRl" Padding="8">
+          <!--  <Label x:Name="incomingLb" Text="INCOMING" FontSize="10" />
+            <ListView x:Name="incomingLv" />
+            <Label x:Name="Outgoing" Text="OUTGOING" FontSize="10" />
+            <ListView x:Name="OutgoinLv" />-->
+        </RelativeLayout>
+    </ScrollView>
+</ContentPage>

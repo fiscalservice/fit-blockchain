@@ -1,0 +1,28 @@
+{
+    "apps": [
+        {
+            "name": "FIT-ASSET-TRACKING",
+            "script": "./index.js",
+            "watch": true,
+            "env_dev1": {
+                "NODE_ENV": "dev",
+                "BAL": "bal1",
+                "CHECK_INBETWEEN": false,
+                "ADMIN_PWD": "setpwdhere",
+                "WEB3_PROVIDER": "http://20.0.0.101:8551"
+            },
+            "env_dev2": {
+                "NODE_ENV": "dev",
+                "BAL": "bal2"
+            },
+            "env_cat1": {
+                "NODE_ENV": "cat",
+                "BAL": "bal1"
+            },
+            "env_cat2": {
+                "NODE_ENV": "cat",
+                "BAL": "bal2"
+            }
+        }
+    ]
+}

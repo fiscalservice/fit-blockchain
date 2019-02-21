@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:AssetTrackPOC" x:Class="AssetTrackPOC.AssetTrackPOCPage" BackgroundColor="#FF607D8B">
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+    <Image Source="logo_bg.png" Opacity="0.08" AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional,XProportional" AbsoluteLayout.LayoutBounds="1,0,1,1"/>
+        <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" Spacing="1" Padding="30">
+            <Label Text="PHYSICAL ASSET MANAGER" TextColor="White" FontSize="12" HorizontalOptions="Center" />
+            <Image Source="logo.png" HeightRequest="120" WidthRequest="120" Margin="20" />
+            <Entry x:Name="usernameText" Placeholder="Username" FontSize="14" TextColor="#FFBDBDBD" BackgroundColor="White" HeightRequest="45" VerticalOptions="Center" Keyboard="Chat"/>
+            <Entry x:Name="passwordText" Placeholder="Password" FontSize="14" TextColor="#FFBDBDBD" BackgroundColor="White" IsPassword="true" HeightRequest="45" VerticalOptions="Center" />
+            <Button x:Name="loginButton" Text="Login" FontSize="12" IsEnabled="true" Clicked="OnButtonClicked" BackgroundColor="#FF00BCD4" TextColor="White" FontAttributes="Bold" Margin="-5,10,-5,0" HeightRequest="55" />
+        </StackLayout>
+        <Label Text="BUREAU OF FISCAL SERVICE U.S.DEPARTMENT OF THE TREASURY" AbsoluteLayout.LayoutBounds=".5,1,.5,.1" AbsoluteLayout.LayoutFlags="All" LineBreakMode="WordWrap" TextColor="Silver" FontSize="11" HorizontalOptions="Center" HorizontalTextAlignment="Center" />
+        <StackLayout x:Name="loadingOverlay" IsVisible="false" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Spacing="0" BackgroundColor="#B3000000">
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <ActivityIndicator IsRunning="true" Color="White" />
+                <Label Text="Please Wait..." TextColor="White" FontSize="16" />
+            </StackLayout>
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>

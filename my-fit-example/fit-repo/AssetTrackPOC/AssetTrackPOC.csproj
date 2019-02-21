@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA976A3E-EC0E-4E62-975F-F2BBCCD0C60F}</ProjectGuid>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UseMSBuildEngine>true</UseMSBuildEngine>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AssetTrackPOC</RootNamespace>
+    <AssemblyName>AssetTrackPOC</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App.xaml" />
+    <EmbeddedResource Include="AssetTrackPOCPage.xaml" />
+    <EmbeddedResource Include="Dashboard\HomePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\IngestDevicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\InitiateTransferPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\ViewDevicesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomCell\CustomTableCell.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\TransferTabs\ActiveTab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\TransferTabs\HistoryTab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomCell\IngestDeviceCell.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomCell\HomeMenuCell.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomCell\MyDeviceCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AssetTrackPOCPage.xaml.cs">
+      <DependentUpon>AssetTrackPOCPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Dashboard\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\IngestDevicePage.xaml.cs">
+      <DependentUpon>IngestDevicePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\InitiateTransferPage.xaml.cs">
+      <DependentUpon>InitiateTransferPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\ViewDevicesPage.xaml.cs">
+      <DependentUpon>ViewDevicesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Data.cs" />
+    <Compile Include="CustomCell\CustomTableCell.cs">
+      <DependentUpon>CustomTableCell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\TransferTabs\ActiveTab.xaml.cs">
+      <DependentUpon>ActiveTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\TransferTabs\HistoryTab.xaml.cs">
+      <DependentUpon>HistoryTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomCell\IngestDeviceCell.xaml.cs">
+      <DependentUpon>IngestDeviceCell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DeviceIngest.cs" />
+    <Compile Include="Model\MobileDevice.cs" />
+    <Compile Include="Model\DeviceIngestData.cs" />
+    <Compile Include="Controllers\ServiceClient.cs" />
+    <Compile Include="Model\WebServiceResponse.cs" />
+    <Compile Include="Model\ServiceEnvironment.cs" />
+    <Compile Include="CustomCell\HomeMenuCell.xaml.cs">
+      <DependentUpon>HomeMenuCell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MenuData.cs" />
+    <Compile Include="Model\MenuObject.cs" />
+    <Compile Include="Model\LogInResponseData.cs" />
+    <Compile Include="Controllers\Constants.cs" />
+    <Compile Include="Model\AccountObject.cs" />
+    <Compile Include="Model\MockAccounts.cs" />
+    <Compile Include="Helpers\DateFormatHelper.cs" />
+    <Compile Include="CustomCell\MyDeviceCell.xaml.cs">
+      <DependentUpon>MyDeviceCell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ObjectCreatorHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.0.3\lib\netstandard1.0\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.0.3\lib\netstandard1.0\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.2.5.0.122203\lib\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.2.5.0.122203\lib\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.2.5.0.122203\lib\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Settings.Abstractions">
+      <HintPath>..\packages\Xam.Plugins.Settings.3.2.0.130-beta\lib\netstandard1.0\Plugin.Settings.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Settings">
+      <HintPath>..\packages\Xam.Plugins.Settings.3.2.0.130-beta\lib\netstandard1.0\Plugin.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile.Core">
+      <HintPath>..\packages\ZXing.Net.Mobile.2.2.9\lib\portable-net45+netcore45+wpa81+wp8\ZXing.Net.Mobile.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.portable">
+      <HintPath>..\packages\ZXing.Net.Mobile.2.2.9\lib\portable-net45+netcore45+wpa81+wp8\zxing.portable.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXingNetMobile">
+      <HintPath>..\packages\ZXing.Net.Mobile.2.2.9\lib\portable-net45+netcore45+wpa81+wp8\ZXingNetMobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core">
+      <HintPath>..\packages\Common.Logging.Core.3.4.1\lib\portable-win+net40+sl40+wp7+wpa81\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\packages\Portable.BouncyCastle.1.8.2\lib\portable-net40+sl5+win8+wp8+wpa81\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Hex">
+      <HintPath>..\packages\Nethereum.Hex.3.0.0\lib\netstandard1.1\Nethereum.Hex.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.JsonRpc.Client">
+      <HintPath>..\packages\Nethereum.JsonRpc.Client.3.0.0\lib\netstandard1.1\Nethereum.JsonRpc.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.JsonRpc.RpcClient">
+      <HintPath>..\packages\Nethereum.JsonRpc.RpcClient.3.0.0\lib\netstandard1.1\Nethereum.JsonRpc.RpcClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.KeyStore">
+      <HintPath>..\packages\Nethereum.KeyStore.3.0.0\lib\netstandard1.1\Nethereum.KeyStore.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.RLP">
+      <HintPath>..\packages\Nethereum.RLP.3.0.0\lib\netstandard1.1\Nethereum.RLP.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Util">
+      <HintPath>..\packages\Nethereum.Util.3.0.0\lib\netstandard1.1\Nethereum.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.ABI">
+      <HintPath>..\packages\Nethereum.ABI.3.0.0\lib\netstandard1.1\Nethereum.ABI.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.RPC">
+      <HintPath>..\packages\Nethereum.RPC.3.0.0\lib\netstandard1.1\Nethereum.RPC.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Contracts">
+      <HintPath>..\packages\Nethereum.Contracts.3.0.0\lib\netstandard1.1\Nethereum.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Signer">
+      <HintPath>..\packages\Nethereum.Signer.3.0.0\lib\netstandard1.1\Nethereum.Signer.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Accounts">
+      <HintPath>..\packages\Nethereum.Accounts.3.0.0\lib\netstandard1.1\Nethereum.Accounts.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Web3">
+      <HintPath>..\packages\Nethereum.Web3.3.0.0\lib\netstandard1.1\Nethereum.Web3.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\portable-net45+win8+wp8+wpa81\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.11\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.11\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.11\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.5.231\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Scripts\jquery-1.9.1.min.js" />
+    <None Include="Scripts\jquery-1.9.1.js" />
+    <None Include="Scripts\jquery-1.9.1-vsdoc.js" />
+    <None Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\bootstrap.js" />
+    <None Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Content\bootstrap\wells.less" />
+    <None Include="Content\bootstrap\variables.less" />
+    <None Include="Content\bootstrap\utilities.less" />
+    <None Include="Content\bootstrap\type.less" />
+    <None Include="Content\bootstrap\tooltip.less" />
+    <None Include="Content\bootstrap\thumbnails.less" />
+    <None Include="Content\bootstrap\theme.less" />
+    <None Include="Content\bootstrap\tables.less" />
+    <None Include="Content\bootstrap\scaffolding.less" />
+    <None Include="Content\bootstrap\responsive-utilities.less" />
+    <None Include="Content\bootstrap\responsive-embed.less" />
+    <None Include="Content\bootstrap\progress-bars.less" />
+    <None Include="Content\bootstrap\print.less" />
+    <None Include="Content\bootstrap\popovers.less" />
+    <None Include="Content\bootstrap\panels.less" />
+    <None Include="Content\bootstrap\pagination.less" />
+    <None Include="Content\bootstrap\pager.less" />
+    <None Include="Content\bootstrap\normalize.less" />
+    <None Include="Content\bootstrap\navs.less" />
+    <None Include="Content\bootstrap\navbar.less" />
+    <None Include="Content\bootstrap\modals.less" />
+    <None Include="Content\bootstrap\mixins\vendor-prefixes.less" />
+    <None Include="Content\bootstrap\mixins\text-overflow.less" />
+    <None Include="Content\bootstrap\mixins\text-emphasis.less" />
+    <None Include="Content\bootstrap\mixins\table-row.less" />
+    <None Include="Content\bootstrap\mixins\tab-focus.less" />
+    <None Include="Content\bootstrap\mixins\size.less" />
+    <None Include="Content\bootstrap\mixins\responsive-visibility.less" />
+    <None Include="Content\bootstrap\mixins\resize.less" />
+    <None Include="Content\bootstrap\mixins\reset-text.less" />
+    <None Include="Content\bootstrap\mixins\reset-filter.less" />
+    <None Include="Content\bootstrap\mixins\progress-bar.less" />
+    <None Include="Content\bootstrap\mixins\panels.less" />
+    <None Include="Content\bootstrap\mixins\pagination.less" />
+    <None Include="Content\bootstrap\mixins\opacity.less" />
+    <None Include="Content\bootstrap\mixins\nav-vertical-align.less" />
+    <None Include="Content\bootstrap\mixins\nav-divider.less" />
+    <None Include="Content\bootstrap\mixins\list-group.less" />
+    <None Include="Content\bootstrap\mixins\labels.less" />
+    <None Include="Content\bootstrap\mixins\image.less" />
+    <None Include="Content\bootstrap\mixins\hide-text.less" />
+    <None Include="Content\bootstrap\mixins\grid.less" />
+    <None Include="Content\bootstrap\mixins\grid-framework.less" />
+    <None Include="Content\bootstrap\mixins\gradients.less" />
+    <None Include="Content\bootstrap\mixins\forms.less" />
+    <None Include="Content\bootstrap\mixins\clearfix.less" />
+    <None Include="Content\bootstrap\mixins\center-block.less" />
+    <None Include="Content\bootstrap\mixins\buttons.less" />
+    <None Include="Content\bootstrap\mixins\border-radius.less" />
+    <None Include="Content\bootstrap\mixins\background-variant.less" />
+    <None Include="Content\bootstrap\mixins\alerts.less" />
+    <None Include="Content\bootstrap\mixins.less" />
+    <None Include="Content\bootstrap\media.less" />
+    <None Include="Content\bootstrap\list-group.less" />
+    <None Include="Content\bootstrap\labels.less" />
+    <None Include="Content\bootstrap\jumbotron.less" />
+    <None Include="Content\bootstrap\input-groups.less" />
+    <None Include="Content\bootstrap\grid.less" />
+    <None Include="Content\bootstrap\glyphicons.less" />
+    <None Include="Content\bootstrap\forms.less" />
+    <None Include="Content\bootstrap\dropdowns.less" />
+    <None Include="Content\bootstrap\component-animations.less" />
+    <None Include="Content\bootstrap\code.less" />
+    <None Include="Content\bootstrap\close.less" />
+    <None Include="Content\bootstrap\carousel.less" />
+    <None Include="Content\bootstrap\buttons.less" />
+    <None Include="Content\bootstrap\button-groups.less" />
+    <None Include="Content\bootstrap\breadcrumbs.less" />
+    <None Include="Content\bootstrap\bootstrap.less" />
+    <None Include="Content\bootstrap\badges.less" />
+    <None Include="Content\bootstrap\alerts.less" />
+    <None Include="Scripts\bootstrap-datetimepicker.min.js" />
+    <None Include="Scripts\bootstrap-datetimepicker.js" />
+    <None Include="Content\_bootstrap-datetimepicker.less" />
+    <None Include="Content\bootstrap-datetimepicker-build.less" />
+    <None Include="Scripts\moment.min.js" />
+    <None Include="Scripts\moment.js" />
+    <None Include="Scripts\moment-with-locales.min.js" />
+    <None Include="Scripts\moment-with-locales.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dashboard\" />
+    <Folder Include="Model\" />
+    <Folder Include="CustomCell\" />
+    <Folder Include="Dashboard\TransferTabs\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Interface\" />
+    <Folder Include="Database\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="SplashScreen\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.2.5.0.122203\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.122203\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" />
+</Project>

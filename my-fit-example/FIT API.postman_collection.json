@@ -1,0 +1,2802 @@
+{
+	"info": {
+		"name": "FIT API Dave",
+		"_postman_id": "fcda5c92-7984-686d-7822-82b35c6a807a",
+		"description": "API Documentation for FIT Project Deloitte",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ingestDevice",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"pm1\",\n\t\"password\": \"password\",\n\t\"assetId\": \"2000\",\n\t\"IMEI\": \"2000\",\n\t\"typeOf\": \"Android\",\n\t\"fromCostCode\": \"4100010300\",\n\t\"receipientUsername\": \"eus1\",\n\t\"receipientCostCode\": \"3430060300\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/ingestDevice",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"ingestDevice"
+					]
+				},
+				"description": "Ingest a device with an embedded key into the system."
+			},
+			"response": [
+				{
+					"id": "b646668e-1ab3-47d5-948f-22e5cc77db11",
+					"name": "ingestDevice",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"eusAddress\": \"0x038F817cCd8c59f710BdB5806213c3EC996ec2f3\",\n\t\"eusPassword\": \"\",\n\t\"deviceAddress\": \"0x0076ed2DD9f7dc78e3f336141329F8784D8cd564\",\n\t\"assetId\": \"0x12345678\",\n\t\"typeOf\": \"0xA0123456\"\n}"
+						},
+						"url": {
+							"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/createDevice",
+							"protocol": "http",
+							"host": [
+								"ec2-52-91-125-113",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"createDevice"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "844",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 24 Jan 2018 00:10:20 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"34c-zLok59KV1mBhjdGi2/dBZvcAEjg\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 2171,
+					"body": "{\"result\":{\"blockHash\":\"0x5abe6d5926dd66380420a9d3d10aabec35046ea4ea6ce7bb2bf9886f8ee86491\",\"blockNumber\":26,\"contractAddress\":null,\"cumulativeGasUsed\":999999999,\"gasUsed\":999999999,\"logsBloom\":\"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\"root\":null,\"transactionHash\":\"0x57272fd506716d0218b578d5c0beaabe21590c44ee1b6de8fe8c7d867ffc70b6\",\"transactionIndex\":0,\"events\":{}}}"
+				}
+			]
+		},
+		{
+			"name": "viewMyDevices eus1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/myDevices?username=eus1",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"myDevices"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "eus1",
+							"equals": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "8f99f00e-f6e0-4115-94bc-c3456167f1d6",
+					"name": "viewMyDevices",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-35-153-194-20.compute-1.amazonaws.com:3000/api/myDevices?username=George",
+							"protocol": "http",
+							"host": [
+								"ec2-35-153-194-20",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"myDevices"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "George",
+									"equals": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "305",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 Feb 2018 16:18:53 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"131-m/4JVaEhXZdx1mHh7UmaPitcu88\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 83,
+					"body": "[{\"0\":\"0x0000000000000000000000000000000000000000\",\"1\":\"4\",\"2\":\"8675309\",\"owner\":\"0x0000000000000000000000000000000000000000\",\"status\":\"4\",\"assetId\":\"8675309\"},{\"0\":\"0x0000000000000000000000000000000000000000\",\"1\":\"0\",\"2\":\"\",\"owner\":\"0x0000000000000000000000000000000000000000\",\"status\":\"0\",\"assetId\":\"\"}]"
+				}
+			]
+		},
+		{
+			"name": "viewMyDevices pm1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/myDevices?username=pm1",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"myDevices"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "pm1",
+							"equals": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "60166070-d8c7-4e57-9fea-843fc0b9dc8b",
+					"name": "viewMyDevices",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-35-153-194-20.compute-1.amazonaws.com:3000/api/myDevices?username=George",
+							"protocol": "http",
+							"host": [
+								"ec2-35-153-194-20",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"myDevices"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "George",
+									"equals": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "305",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 Feb 2018 16:18:53 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"131-m/4JVaEhXZdx1mHh7UmaPitcu88\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 83,
+					"body": "[{\"0\":\"0x0000000000000000000000000000000000000000\",\"1\":\"4\",\"2\":\"8675309\",\"owner\":\"0x0000000000000000000000000000000000000000\",\"status\":\"4\",\"assetId\":\"8675309\"},{\"0\":\"0x0000000000000000000000000000000000000000\",\"1\":\"0\",\"2\":\"\",\"owner\":\"0x0000000000000000000000000000000000000000\",\"status\":\"0\",\"assetId\":\"\"}]"
+				}
+			]
+		},
+		{
+			"name": "viewMyDevices emp2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/myDevices?username=emp2",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"myDevices"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "emp2",
+							"equals": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "0af08c45-ce32-483a-82b1-bd4236a99ce9",
+					"name": "viewMyDevices",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-35-153-194-20.compute-1.amazonaws.com:3000/api/myDevices?username=George",
+							"protocol": "http",
+							"host": [
+								"ec2-35-153-194-20",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"myDevices"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "George",
+									"equals": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "305",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 Feb 2018 16:18:53 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"131-m/4JVaEhXZdx1mHh7UmaPitcu88\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 83,
+					"body": "[{\"0\":\"0x0000000000000000000000000000000000000000\",\"1\":\"4\",\"2\":\"8675309\",\"owner\":\"0x0000000000000000000000000000000000000000\",\"status\":\"4\",\"assetId\":\"8675309\"},{\"0\":\"0x0000000000000000000000000000000000000000\",\"1\":\"0\",\"2\":\"\",\"owner\":\"0x0000000000000000000000000000000000000000\",\"status\":\"0\",\"assetId\":\"\"}]"
+				}
+			]
+		},
+		{
+			"name": "acceptDevice",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"assetId\": \"1000\",\n\t\"username\": \"eus1\",\n\t\"password\": \"password\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/acceptDevice",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"acceptDevice"
+					]
+				},
+				"description": "activate the device"
+			},
+			"response": [
+				{
+					"id": "74618d49-8074-46d9-b6e8-3c14182e991e",
+					"name": "activateDevice",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"deviceSignature\": {\n    \t\"v\": 28,\n    \t\"r\": \"0x907c81a899c69b98fac4cbeb60dda208665aefd161a6a98fa39737c224b94587\",\n    \t\"s\": \"0x4258671a55ca38500b350465f6c88c1ba1251c3c7b364ff12fd4a40f7e044eb8\",\n    \t\"messageHash\": \"0x60505c83a54729c334d0192c9600d7e74a33b94cf213c70a73ca441ca21da555\",\n    \t\"message\": \"1517431274\"\n\t},\n\t\"assetId\": \"250624\",\n\t\"username\": \"George\",\n\t\"password\": \"poop\"\n}"
+						},
+						"url": {
+							"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/activateDevice",
+							"protocol": "http",
+							"host": [
+								"ec2-52-91-125-113",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"activateDevice"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2089",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 31 Jan 2018 20:55:10 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"829-lciXvSW4aM4vb1K/XBgn8QKqdrQ\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 2229,
+					"body": "{\"result\":{\"blockHash\":\"0x9b3829dd8ac42a8b3c43d6973b17f4f72a2fc31207b3c2e276931b033a2a2e07\",\"blockNumber\":76,\"contractAddress\":null,\"cumulativeGasUsed\":128708,\"gasUsed\":128708,\"logsBloom\":\"0x00100000000000000000000000080000000000000000000000000000000000020000000000820000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000004000000001010000000000000000000000000000000000002000000000000400000000000000000000000000000800\",\"root\":null,\"transactionHash\":\"0x1e8ccd3f3e86760d924d8cd4d58da6d3c8bc2b24810b724fd0f6400d96ba8535\",\"transactionIndex\":0,\"events\":{\"DeviceActivated\":{\"address\":\"0x57F14ED4B741d15CE2A3677eF98DEC345C48138a\",\"blockHash\":\"0x9b3829dd8ac42a8b3c43d6973b17f4f72a2fc31207b3c2e276931b033a2a2e07\",\"blockNumber\":76,\"logIndex\":0,\"transactionHash\":\"0x1e8ccd3f3e86760d924d8cd4d58da6d3c8bc2b24810b724fd0f6400d96ba8535\",\"transactionIndex\":0,\"transactionLogIndex\":\"0x0\",\"type\":\"mined\",\"id\":\"log_e11be620\",\"returnValues\":{\"0\":\"0xCb628879D6980C765B7f3851100666C0B4A7F6E1\",\"1\":\"0xCDe4070Df69eAA767C135f7940A4dF3DCD467765\",\"2\":\"1517432109\",\"3\":\"250624\",\"device\":\"0xCb628879D6980C765B7f3851100666C0B4A7F6E1\",\"eus\":\"0xCDe4070Df69eAA767C135f7940A4dF3DCD467765\",\"time\":\"1517432109\",\"assetId\":\"250624\"},\"event\":\"DeviceActivated\",\"signature\":\"0x81709afbe3172274ebbf6c19c073170d9da4f4072dbb058996b1171be284df33\",\"raw\":{\"data\":\"0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000063235303632340000000000000000000000000000000000000000000000000000\",\"topics\":[\"0x81709afbe3172274ebbf6c19c073170d9da4f4072dbb058996b1171be284df33\",\"0x000000000000000000000000cb628879d6980c765b7f3851100666c0b4a7f6e1\",\"0x000000000000000000000000cde4070df69eaa767c135f7940a4df3dcd467765\",\"0x000000000000000000000000000000000000000000000000000000005a722d2d\"]}}}}}"
+				}
+			]
+		},
+		{
+			"name": "transferToPM",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"assetId\": \"1000\",\n\t\"username\": \"eus1\",\n\t\"password\": \"password\",\n\t\"pmUsername\": \"pm1\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/transferToPM",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"transferToPM"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "16dad18b-fb52-4efd-8597-24c564f05a2e",
+					"name": "viewMyDevices",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-35-153-194-20.compute-1.amazonaws.com:3000/api/myDevices?username=George",
+							"protocol": "http",
+							"host": [
+								"ec2-35-153-194-20",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"myDevices"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "George",
+									"equals": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "305",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 Feb 2018 16:18:53 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"131-m/4JVaEhXZdx1mHh7UmaPitcu88\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 83,
+					"body": "[{\"0\":\"0x0000000000000000000000000000000000000000\",\"1\":\"4\",\"2\":\"8675309\",\"owner\":\"0x0000000000000000000000000000000000000000\",\"status\":\"4\",\"assetId\":\"8675309\"},{\"0\":\"0x0000000000000000000000000000000000000000\",\"1\":\"0\",\"2\":\"\",\"owner\":\"0x0000000000000000000000000000000000000000\",\"status\":\"0\",\"assetId\":\"\"}]"
+				}
+			]
+		},
+		{
+			"name": "transferToEUS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"assetId\": \"2000\",\n\t\"username\": \"eus1\",\n\t\"password\": \"password\",\n\t\"eusUsername\": \"eus1\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/transferToEUS",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"transferToEUS"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "f7d0ee3c-e81d-42bd-930d-51d260f4b3a8",
+					"name": "viewMyDevices",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-35-153-194-20.compute-1.amazonaws.com:3000/api/myDevices?username=George",
+							"protocol": "http",
+							"host": [
+								"ec2-35-153-194-20",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"myDevices"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "George",
+									"equals": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "305",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 Feb 2018 16:18:53 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"131-m/4JVaEhXZdx1mHh7UmaPitcu88\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 83,
+					"body": "[{\"0\":\"0x0000000000000000000000000000000000000000\",\"1\":\"4\",\"2\":\"8675309\",\"owner\":\"0x0000000000000000000000000000000000000000\",\"status\":\"4\",\"assetId\":\"8675309\"},{\"0\":\"0x0000000000000000000000000000000000000000\",\"1\":\"0\",\"2\":\"\",\"owner\":\"0x0000000000000000000000000000000000000000\",\"status\":\"0\",\"assetId\":\"\"}]"
+				}
+			]
+		},
+		{
+			"name": "loginDevice emp2 assetId 3000",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"assetId\": \"3000\",\n\t\"username\": \"emp2\",\n\t\"password\": \"password\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/loginDevice",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"loginDevice"
+					]
+				},
+				"description": "login to device using two signatures, one from the user account, one from the device account itself. "
+			},
+			"response": [
+				{
+					"id": "b3ba6f26-e12a-434a-9ea0-1718cc3f9b73",
+					"name": "loginDevice",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"deviceSignature\": {\n\t    \"v\": \"0x1b\",\n\t    \"r\": \"0x8ac2ef63c2bc2fb39a991e90de72eab45f9b21b9e71bc187efe72a534748085a\",\n\t    \"s\": \"0x5fbd70ac73acdc8f0a679a72db35cce7dbda2c69c29103030dfd8e3a56cabc4f\",\n\t    \"messageHash\": \"0x592fa743889fc7f92ac2a37bb1f5ba1daf2a5c84741ca0e0061d243a2e6707ba\",\n\t    \"message\": \"Hello World\"\n\t},\n\t\"fromAddress\": \"0xf17cABc146879a8204F9eCe4f327127A7480f4f0\",\n\t\"password\": \"poop\"\n}"
+						},
+						"url": {
+							"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/loginDevice",
+							"protocol": "http",
+							"host": [
+								"ec2-52-91-125-113",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"loginDevice"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "840",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 24 Jan 2018 22:35:11 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"348-BtgDSlu/mNIzZA1x8XDQtsHfa5M\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 1524,
+					"body": "{\"result\":{\"blockHash\":\"0x77f9b7ccfbc51bf1c8e0f4dcc6e8709f7825f372d0a5d47250a75c0f6090e907\",\"blockNumber\":28,\"contractAddress\":null,\"cumulativeGasUsed\":9040000,\"gasUsed\":9040000,\"logsBloom\":\"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\"root\":null,\"transactionHash\":\"0x89bba54b7b882158af51d3e60023529c0eca94998c0cff6f1c417b75c21dcf9f\",\"transactionIndex\":0,\"events\":{}}}"
+				}
+			]
+		},
+		{
+			"name": "loginDevice emp2 assetId 3000 copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"assetId\": \"3000\",\n\t\"username\": \"emp2\",\n\t\"password\": \"password\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/loginDevice",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"loginDevice"
+					]
+				},
+				"description": "login to device using two signatures, one from the user account, one from the device account itself. "
+			},
+			"response": [
+				{
+					"id": "c2415ca7-6f6e-4e29-8367-e2abaaeb48d2",
+					"name": "loginDevice",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"deviceSignature\": {\n\t    \"v\": \"0x1b\",\n\t    \"r\": \"0x8ac2ef63c2bc2fb39a991e90de72eab45f9b21b9e71bc187efe72a534748085a\",\n\t    \"s\": \"0x5fbd70ac73acdc8f0a679a72db35cce7dbda2c69c29103030dfd8e3a56cabc4f\",\n\t    \"messageHash\": \"0x592fa743889fc7f92ac2a37bb1f5ba1daf2a5c84741ca0e0061d243a2e6707ba\",\n\t    \"message\": \"Hello World\"\n\t},\n\t\"fromAddress\": \"0xf17cABc146879a8204F9eCe4f327127A7480f4f0\",\n\t\"password\": \"poop\"\n}"
+						},
+						"url": {
+							"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/loginDevice",
+							"protocol": "http",
+							"host": [
+								"ec2-52-91-125-113",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"loginDevice"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "840",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 24 Jan 2018 22:35:11 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"348-BtgDSlu/mNIzZA1x8XDQtsHfa5M\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 1524,
+					"body": "{\"result\":{\"blockHash\":\"0x77f9b7ccfbc51bf1c8e0f4dcc6e8709f7825f372d0a5d47250a75c0f6090e907\",\"blockNumber\":28,\"contractAddress\":null,\"cumulativeGasUsed\":9040000,\"gasUsed\":9040000,\"logsBloom\":\"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\"root\":null,\"transactionHash\":\"0x89bba54b7b882158af51d3e60023529c0eca94998c0cff6f1c417b75c21dcf9f\",\"transactionIndex\":0,\"events\":{}}}"
+				}
+			]
+		},
+		{
+			"name": "loginDevice emp1 assetId 3000",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"assetId\": \"7000\",\n\t\"username\": \"emp1\",\n\t\"password\": \"password\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/loginDevice",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"loginDevice"
+					]
+				},
+				"description": "login to device using two signatures, one from the user account, one from the device account itself. "
+			},
+			"response": [
+				{
+					"id": "caea2931-f9bb-449b-9c9b-aef7df538715",
+					"name": "loginDevice",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"deviceSignature\": {\n\t    \"v\": \"0x1b\",\n\t    \"r\": \"0x8ac2ef63c2bc2fb39a991e90de72eab45f9b21b9e71bc187efe72a534748085a\",\n\t    \"s\": \"0x5fbd70ac73acdc8f0a679a72db35cce7dbda2c69c29103030dfd8e3a56cabc4f\",\n\t    \"messageHash\": \"0x592fa743889fc7f92ac2a37bb1f5ba1daf2a5c84741ca0e0061d243a2e6707ba\",\n\t    \"message\": \"Hello World\"\n\t},\n\t\"fromAddress\": \"0xf17cABc146879a8204F9eCe4f327127A7480f4f0\",\n\t\"password\": \"poop\"\n}"
+						},
+						"url": {
+							"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/loginDevice",
+							"protocol": "http",
+							"host": [
+								"ec2-52-91-125-113",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"loginDevice"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "840",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 24 Jan 2018 22:35:11 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"348-BtgDSlu/mNIzZA1x8XDQtsHfa5M\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 1524,
+					"body": "{\"result\":{\"blockHash\":\"0x77f9b7ccfbc51bf1c8e0f4dcc6e8709f7825f372d0a5d47250a75c0f6090e907\",\"blockNumber\":28,\"contractAddress\":null,\"cumulativeGasUsed\":9040000,\"gasUsed\":9040000,\"logsBloom\":\"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\"root\":null,\"transactionHash\":\"0x89bba54b7b882158af51d3e60023529c0eca94998c0cff6f1c417b75c21dcf9f\",\"transactionIndex\":0,\"events\":{}}}"
+				}
+			]
+		},
+		{
+			"name": "collectDeviceFromEmployee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"assetId\": \"3000\",\n\t\"username\": \"eus1\",\n\t\"password\": \"password\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/collectDeviceFromEmployee",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"collectDeviceFromEmployee"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "requestForDisposal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"assetId\": \"5000\",\n\t\"username\": \"eus1\",\n\t\"password\": \"password\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/requestForDisposal",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"requestForDisposal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "acceptForDisposal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"assetId\": \"5000\",\n\t\"username\": \"pm1\",\n\t\"password\": \"password\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/acceptForDisposal",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"acceptForDisposal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DisposeDevice",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"assetId\": \"3000\",\n\t\"username\": \"pm1\",\n\t\"password\": \"password\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/disposeDevice",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"disposeDevice"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "454e9d06-423c-4344-b033-81b96bdae80f",
+					"name": "DisposeDevice",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"deviceAddress\": \"0x461dE94b2fAdbb57c8DE4976fa40233F9e9D1744\",\n\t\"username\": \"George\",\n\t\"password\": \"poop\"\n}"
+						},
+						"url": {
+							"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/disposeDevice",
+							"protocol": "http",
+							"host": [
+								"ec2-52-91-125-113",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"disposeDevice"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2091",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Feb 2018 05:34:19 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"82b-Tpj7BxsUZbiA7q1k/Z2Gj9IdiVk\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 45,
+					"body": "{\"result\":{\"blockHash\":\"0x9019d1cbebea0f5091fd1533218ac4f64418dcdb92203a0a901b00a15700a355\",\"blockNumber\":204,\"contractAddress\":null,\"cumulativeGasUsed\":165266,\"gasUsed\":165266,\"logsBloom\":\"0x00000004000000000000000020000000000000000000000000000000000000000000000000020000000004000000000000000000000000002000000000000000000000000000000000002000000000000000000000100000000000000000004000000000008000000000000000000000000000000000000000080000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000200000000000800000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\"root\":null,\"transactionHash\":\"0x670775c1e5021082a8c89dd3b5b39869e5b0e99bd2e23a5d257b34e0dc6b7646\",\"transactionIndex\":0,\"events\":{\"DeviceDisposed\":{\"address\":\"0xa082f10b529e69179C1daCeb57dd95F7938C74bb\",\"blockHash\":\"0x9019d1cbebea0f5091fd1533218ac4f64418dcdb92203a0a901b00a15700a355\",\"blockNumber\":204,\"logIndex\":0,\"transactionHash\":\"0x670775c1e5021082a8c89dd3b5b39869e5b0e99bd2e23a5d257b34e0dc6b7646\",\"transactionIndex\":0,\"transactionLogIndex\":\"0x0\",\"type\":\"mined\",\"id\":\"log_8c45f8a8\",\"returnValues\":{\"0\":\"0x461dE94b2fAdbb57c8DE4976fa40233F9e9D1744\",\"1\":\"0xbAB5eaa1315f5D52471143944464A82eb0a481e7\",\"2\":\"1517547579\",\"3\":\"8675309\",\"device\":\"0x461dE94b2fAdbb57c8DE4976fa40233F9e9D1744\",\"eus\":\"0xbAB5eaa1315f5D52471143944464A82eb0a481e7\",\"time\":\"1517547579\",\"assetId\":\"8675309\"},\"event\":\"DeviceDisposed\",\"signature\":\"0x81709afbe3172274ebbf6c19c073170d9da4f4072dbb058996b1171be284df33\",\"raw\":{\"data\":\"0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000063235303632340000000000000000000000000000000000000000000000000000\",\"topics\":[\"0x81709afbe3172274ebbf6c19c073170d9da4f4072dbb058996b1171be284df33\",\"0x000000000000000000000000461de94b2fadbb57c8de4976fa40233f9e9d1744\",\"0x000000000000000000000000bab5eaa1315f5d52471143944464a82eb0a481e7\",\"0x000000000000000000000000000000000000000000000000000000005a73f03b\"]}}}}}"
+				}
+			]
+		},
+		{
+			"name": "loginDevice pm1 assetId 1000",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"assetId\": \"1000\",\n\t\"username\": \"pm1\",\n\t\"password\": \"password\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/loginDevice",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"loginDevice"
+					]
+				},
+				"description": "login to device using two signatures, one from the user account, one from the device account itself. "
+			},
+			"response": [
+				{
+					"id": "87601017-d31c-4348-aba1-5cbcdbb33153",
+					"name": "loginDevice",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"deviceSignature\": {\n\t    \"v\": \"0x1b\",\n\t    \"r\": \"0x8ac2ef63c2bc2fb39a991e90de72eab45f9b21b9e71bc187efe72a534748085a\",\n\t    \"s\": \"0x5fbd70ac73acdc8f0a679a72db35cce7dbda2c69c29103030dfd8e3a56cabc4f\",\n\t    \"messageHash\": \"0x592fa743889fc7f92ac2a37bb1f5ba1daf2a5c84741ca0e0061d243a2e6707ba\",\n\t    \"message\": \"Hello World\"\n\t},\n\t\"fromAddress\": \"0xf17cABc146879a8204F9eCe4f327127A7480f4f0\",\n\t\"password\": \"poop\"\n}"
+						},
+						"url": {
+							"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/loginDevice",
+							"protocol": "http",
+							"host": [
+								"ec2-52-91-125-113",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"loginDevice"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "840",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 24 Jan 2018 22:35:11 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"348-BtgDSlu/mNIzZA1x8XDQtsHfa5M\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 1524,
+					"body": "{\"result\":{\"blockHash\":\"0x77f9b7ccfbc51bf1c8e0f4dcc6e8709f7825f372d0a5d47250a75c0f6090e907\",\"blockNumber\":28,\"contractAddress\":null,\"cumulativeGasUsed\":9040000,\"gasUsed\":9040000,\"logsBloom\":\"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\"root\":null,\"transactionHash\":\"0x89bba54b7b882158af51d3e60023529c0eca94998c0cff6f1c417b75c21dcf9f\",\"transactionIndex\":0,\"events\":{}}}"
+				}
+			]
+		},
+		{
+			"name": "loginDevice eus1 assetId 2000",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"assetId\": \"2000\",\n\t\"username\": \"eus1\",\n\t\"password\": \"password\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/loginDevice",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"loginDevice"
+					]
+				},
+				"description": "login to device using two signatures, one from the user account, one from the device account itself. "
+			},
+			"response": [
+				{
+					"id": "5313b909-b85b-4a0d-91cb-519751090bd3",
+					"name": "loginDevice",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"deviceSignature\": {\n\t    \"v\": \"0x1b\",\n\t    \"r\": \"0x8ac2ef63c2bc2fb39a991e90de72eab45f9b21b9e71bc187efe72a534748085a\",\n\t    \"s\": \"0x5fbd70ac73acdc8f0a679a72db35cce7dbda2c69c29103030dfd8e3a56cabc4f\",\n\t    \"messageHash\": \"0x592fa743889fc7f92ac2a37bb1f5ba1daf2a5c84741ca0e0061d243a2e6707ba\",\n\t    \"message\": \"Hello World\"\n\t},\n\t\"fromAddress\": \"0xf17cABc146879a8204F9eCe4f327127A7480f4f0\",\n\t\"password\": \"poop\"\n}"
+						},
+						"url": {
+							"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/loginDevice",
+							"protocol": "http",
+							"host": [
+								"ec2-52-91-125-113",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"loginDevice"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "840",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 24 Jan 2018 22:35:11 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"348-BtgDSlu/mNIzZA1x8XDQtsHfa5M\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 1524,
+					"body": "{\"result\":{\"blockHash\":\"0x77f9b7ccfbc51bf1c8e0f4dcc6e8709f7825f372d0a5d47250a75c0f6090e907\",\"blockNumber\":28,\"contractAddress\":null,\"cumulativeGasUsed\":9040000,\"gasUsed\":9040000,\"logsBloom\":\"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\"root\":null,\"transactionHash\":\"0x89bba54b7b882158af51d3e60023529c0eca94998c0cff6f1c417b75c21dcf9f\",\"transactionIndex\":0,\"events\":{}}}"
+				}
+			]
+		},
+		{
+			"name": "allTransfers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fromBlock\": 0,\n\t\"toBlock\": \"latest\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/pastTransfers?username=emp1",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pastTransfers"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "emp1",
+							"equals": true
+						}
+					]
+				},
+				"description": "get all past transfers from within a certain timeframe (denoted by the filter object itself)"
+			},
+			"response": []
+		},
+		{
+			"name": "PM-Active-Incoming",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fromBlock\": 0,\n\t\"toBlock\": \"latest\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/pastTransfers?username=pm1&isActive=true&type=0",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pastTransfers"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "pm1",
+							"equals": true
+						},
+						{
+							"key": "isActive",
+							"value": "true",
+							"equals": true
+						},
+						{
+							"key": "type",
+							"value": "0",
+							"equals": true
+						}
+					]
+				},
+				"description": "get all past transfers from within a certain timeframe (denoted by the filter object itself)"
+			},
+			"response": []
+		},
+		{
+			"name": "PM-History-Incoming",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fromBlock\": 0,\n\t\"toBlock\": \"latest\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/pastTransfers?username=pm1&isActive=false&type=0",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pastTransfers"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "pm1",
+							"equals": true
+						},
+						{
+							"key": "isActive",
+							"value": "false",
+							"equals": true
+						},
+						{
+							"key": "type",
+							"value": "0",
+							"equals": true
+						}
+					]
+				},
+				"description": "get all past transfers from within a certain timeframe (denoted by the filter object itself)"
+			},
+			"response": []
+		},
+		{
+			"name": "PM-Active-Outgoing",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fromBlock\": 0,\n\t\"toBlock\": \"latest\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/pastTransfers?username=pm1&isActive=true&type=1",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pastTransfers"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "pm1",
+							"equals": true
+						},
+						{
+							"key": "isActive",
+							"value": "true",
+							"equals": true
+						},
+						{
+							"key": "type",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": "get all past transfers from within a certain timeframe (denoted by the filter object itself)"
+			},
+			"response": []
+		},
+		{
+			"name": "PM-History-Outgoing",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fromBlock\": 0,\n\t\"toBlock\": \"latest\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/pastTransfers?username=pm1&isActive=false&type=1",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pastTransfers"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "pm1",
+							"equals": true
+						},
+						{
+							"key": "isActive",
+							"value": "false",
+							"equals": true
+						},
+						{
+							"key": "type",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": "get all past transfers from within a certain timeframe (denoted by the filter object itself)"
+			},
+			"response": []
+		},
+		{
+			"name": "EUS-Active-Incoming",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fromBlock\": 0,\n\t\"toBlock\": \"latest\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/pastTransfers?username=eus1&isActive=true&type=0",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pastTransfers"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "eus1",
+							"equals": true
+						},
+						{
+							"key": "isActive",
+							"value": "true",
+							"equals": true
+						},
+						{
+							"key": "type",
+							"value": "0",
+							"equals": true
+						}
+					]
+				},
+				"description": "get all past transfers from within a certain timeframe (denoted by the filter object itself)"
+			},
+			"response": []
+		},
+		{
+			"name": "EUS-History-Incoming",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fromBlock\": 0,\n\t\"toBlock\": \"latest\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/pastTransfers?username=eus1&isActive=false&type=0",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pastTransfers"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "eus1",
+							"equals": true
+						},
+						{
+							"key": "isActive",
+							"value": "false",
+							"equals": true
+						},
+						{
+							"key": "type",
+							"value": "0",
+							"equals": true
+						}
+					]
+				},
+				"description": "get all past transfers from within a certain timeframe (denoted by the filter object itself)"
+			},
+			"response": []
+		},
+		{
+			"name": "EUS-Active-Outgoing",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fromBlock\": 0,\n\t\"toBlock\": \"latest\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/pastTransfers?username=eus1&isActive=true&type=1",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pastTransfers"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "eus1",
+							"equals": true
+						},
+						{
+							"key": "isActive",
+							"value": "true",
+							"equals": true
+						},
+						{
+							"key": "type",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": "get all past transfers from within a certain timeframe (denoted by the filter object itself)"
+			},
+			"response": []
+		},
+		{
+			"name": "EUS-History-Outgoing",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fromBlock\": 0,\n\t\"toBlock\": \"latest\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/pastTransfers?username=eus1&isActive=false&type=1",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pastTransfers"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "eus1",
+							"equals": true
+						},
+						{
+							"key": "isActive",
+							"value": "false",
+							"equals": true
+						},
+						{
+							"key": "type",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": "get all past transfers from within a certain timeframe (denoted by the filter object itself)"
+			},
+			"response": []
+		},
+		{
+			"name": "pastLogins",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fromBlock\": 0,\n\t\"toBlock\": \"latest\"\n\t\"\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/pastLogins",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pastLogins"
+					]
+				},
+				"description": "view and be able to filter through all previous logins made"
+			},
+			"response": []
+		},
+		{
+			"name": "pastIngestions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fromBlock\": 0,\n\t\"toBlock\": \"latest\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/pastIngestions",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pastIngestions"
+					]
+				},
+				"description": "past ingestions by various PMs"
+			},
+			"response": []
+		},
+		{
+			"name": "getAccounts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/admin/accounts",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refresh",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/admin/refresh",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"refresh"
+					]
+				},
+				"description": "Get new contract addresses, one for rolemanager and one for assets"
+			},
+			"response": []
+		},
+		{
+			"name": "createUser PM",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\": \"password\", \n\t\"role\": 0, \n\t\"employeeId\": \"1\", \n\t\"costcode\": \"4100010300\", \n\t\"username\": \"pm1\",\n\t\"location\": \"Washington, DC\",\n\t\"excessCostCode\": \"700305X\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/admin/createUser",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"createUser"
+					]
+				},
+				"description": "Create a new user"
+			},
+			"response": [
+				{
+					"id": "35145014-a373-4258-800a-aebffda9a513",
+					"name": "createUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"password\": \"poop\", \n\t\"role\": 1, \n\t\"employeeId\": \"1234567\", \n\t\"costcode\": \"somethingsomethingcostcode\", \n\t\"username\": \"George\"\n}"
+						},
+						"url": {
+							"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/admin/createUser",
+							"protocol": "http",
+							"host": [
+								"ec2-52-91-125-113",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"createUser"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2353",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 31 Jan 2018 20:36:12 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"931-kYuuetpGPI6vt7/4E9bEflWmWW4\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 1137,
+					"body": "{\"account\":\"0xCDe4070Df69eAA767C135f7940A4dF3DCD467765\",\"tx\":{\"blockHash\":\"0x1bc5ee2b68f3e330fb73374530db491078cff655be26f224ab1e42f1a1c2b225\",\"blockNumber\":75,\"contractAddress\":null,\"cumulativeGasUsed\":357672,\"gasUsed\":357672,\"logsBloom\":\"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000002000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\"root\":null,\"transactionHash\":\"0x9999c831c418d3798a792536fb06d6171ff46673081edc60e14ba45e0bc0c552\",\"transactionIndex\":0,\"events\":{\"UserAdded\":{\"address\":\"0xC08D56ed8cc7A4E0Ba314588051d1F7FaeF563d0\",\"blockHash\":\"0x1bc5ee2b68f3e330fb73374530db491078cff655be26f224ab1e42f1a1c2b225\",\"blockNumber\":75,\"logIndex\":0,\"transactionHash\":\"0x9999c831c418d3798a792536fb06d6171ff46673081edc60e14ba45e0bc0c552\",\"transactionIndex\":0,\"transactionLogIndex\":\"0x0\",\"type\":\"mined\",\"id\":\"log_4532c12f\",\"returnValues\":{\"0\":\"0xCDe4070Df69eAA767C135f7940A4dF3DCD467765\",\"1\":\"1\",\"2\":\"0x3132333435363700000000000000000000000000000000000000000000000000\",\"3\":\"0x47656f7267650000000000000000000000000000000000000000000000000000\",\"4\":\"0x736f6d657468696e67736f6d657468696e67636f7374636f6465000000000000\",\"user\":\"0xCDe4070Df69eAA767C135f7940A4dF3DCD467765\",\"role\":\"1\",\"empId\":\"0x3132333435363700000000000000000000000000000000000000000000000000\",\"username\":\"0x47656f7267650000000000000000000000000000000000000000000000000000\",\"costCode\":\"0x736f6d657468696e67736f6d657468696e67636f7374636f6465000000000000\"},\"event\":\"UserAdded\",\"signature\":\"0x57d647812174c31265e287b98aa89c54fdf6453281371a1afe25687c028deb1c\",\"raw\":{\"data\":\"0x000000000000000000000000cde4070df69eaa767c135f7940a4df3dcd4677650000000000000000000000000000000000000000000000000000000000000001313233343536370000000000000000000000000000000000000000000000000047656f7267650000000000000000000000000000000000000000000000000000736f6d657468696e67736f6d657468696e67636f7374636f6465000000000000\",\"topics\":[\"0x57d647812174c31265e287b98aa89c54fdf6453281371a1afe25687c028deb1c\"]}}}}}"
+				}
+			]
+		},
+		{
+			"name": "createUser EUS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\": \"password\", \n\t\"role\": 1, \n\t\"employeeId\": \"2\", \n\t\"costcode\": \"3430060300\", \n\t\"username\": \"eus1\",\n\t\"location\": \"Washington, DC\",\n\t\"excessCostCode\": \"77000X\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/admin/createUser",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"createUser"
+					]
+				},
+				"description": "Create a new user"
+			},
+			"response": [
+				{
+					"id": "f7b7a599-6af4-433d-b5b4-3f527fa00224",
+					"name": "createUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"password\": \"poop\", \n\t\"role\": 1, \n\t\"employeeId\": \"1234567\", \n\t\"costcode\": \"somethingsomethingcostcode\", \n\t\"username\": \"George\"\n}"
+						},
+						"url": {
+							"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/admin/createUser",
+							"protocol": "http",
+							"host": [
+								"ec2-52-91-125-113",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"createUser"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2353",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 31 Jan 2018 20:36:12 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"931-kYuuetpGPI6vt7/4E9bEflWmWW4\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 1137,
+					"body": "{\"account\":\"0xCDe4070Df69eAA767C135f7940A4dF3DCD467765\",\"tx\":{\"blockHash\":\"0x1bc5ee2b68f3e330fb73374530db491078cff655be26f224ab1e42f1a1c2b225\",\"blockNumber\":75,\"contractAddress\":null,\"cumulativeGasUsed\":357672,\"gasUsed\":357672,\"logsBloom\":\"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000002000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\"root\":null,\"transactionHash\":\"0x9999c831c418d3798a792536fb06d6171ff46673081edc60e14ba45e0bc0c552\",\"transactionIndex\":0,\"events\":{\"UserAdded\":{\"address\":\"0xC08D56ed8cc7A4E0Ba314588051d1F7FaeF563d0\",\"blockHash\":\"0x1bc5ee2b68f3e330fb73374530db491078cff655be26f224ab1e42f1a1c2b225\",\"blockNumber\":75,\"logIndex\":0,\"transactionHash\":\"0x9999c831c418d3798a792536fb06d6171ff46673081edc60e14ba45e0bc0c552\",\"transactionIndex\":0,\"transactionLogIndex\":\"0x0\",\"type\":\"mined\",\"id\":\"log_4532c12f\",\"returnValues\":{\"0\":\"0xCDe4070Df69eAA767C135f7940A4dF3DCD467765\",\"1\":\"1\",\"2\":\"0x3132333435363700000000000000000000000000000000000000000000000000\",\"3\":\"0x47656f7267650000000000000000000000000000000000000000000000000000\",\"4\":\"0x736f6d657468696e67736f6d657468696e67636f7374636f6465000000000000\",\"user\":\"0xCDe4070Df69eAA767C135f7940A4dF3DCD467765\",\"role\":\"1\",\"empId\":\"0x3132333435363700000000000000000000000000000000000000000000000000\",\"username\":\"0x47656f7267650000000000000000000000000000000000000000000000000000\",\"costCode\":\"0x736f6d657468696e67736f6d657468696e67636f7374636f6465000000000000\"},\"event\":\"UserAdded\",\"signature\":\"0x57d647812174c31265e287b98aa89c54fdf6453281371a1afe25687c028deb1c\",\"raw\":{\"data\":\"0x000000000000000000000000cde4070df69eaa767c135f7940a4df3dcd4677650000000000000000000000000000000000000000000000000000000000000001313233343536370000000000000000000000000000000000000000000000000047656f7267650000000000000000000000000000000000000000000000000000736f6d657468696e67736f6d657468696e67636f7374636f6465000000000000\",\"topics\":[\"0x57d647812174c31265e287b98aa89c54fdf6453281371a1afe25687c028deb1c\"]}}}}}"
+				}
+			]
+		},
+		{
+			"name": "createUser Employee emp2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\": \"password\", \n\t\"role\": 2, \n\t\"employeeId\": \"3\", \n\t\"costcode\": \"5000000100\", \n\t\"username\": \"emp2\",\n\t\"location\": \"Washington, DC\",\n\t\"excessCostCode\": \"5000000100\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/admin/createUser",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"createUser"
+					]
+				},
+				"description": "Create a new user"
+			},
+			"response": [
+				{
+					"id": "c571cfcd-def5-41ca-a72f-4def3e0961fb",
+					"name": "createUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"password\": \"poop\", \n\t\"role\": 1, \n\t\"employeeId\": \"1234567\", \n\t\"costcode\": \"somethingsomethingcostcode\", \n\t\"username\": \"George\"\n}"
+						},
+						"url": {
+							"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/admin/createUser",
+							"protocol": "http",
+							"host": [
+								"ec2-52-91-125-113",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"createUser"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2353",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 31 Jan 2018 20:36:12 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"931-kYuuetpGPI6vt7/4E9bEflWmWW4\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 1137,
+					"body": "{\"account\":\"0xCDe4070Df69eAA767C135f7940A4dF3DCD467765\",\"tx\":{\"blockHash\":\"0x1bc5ee2b68f3e330fb73374530db491078cff655be26f224ab1e42f1a1c2b225\",\"blockNumber\":75,\"contractAddress\":null,\"cumulativeGasUsed\":357672,\"gasUsed\":357672,\"logsBloom\":\"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000002000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\"root\":null,\"transactionHash\":\"0x9999c831c418d3798a792536fb06d6171ff46673081edc60e14ba45e0bc0c552\",\"transactionIndex\":0,\"events\":{\"UserAdded\":{\"address\":\"0xC08D56ed8cc7A4E0Ba314588051d1F7FaeF563d0\",\"blockHash\":\"0x1bc5ee2b68f3e330fb73374530db491078cff655be26f224ab1e42f1a1c2b225\",\"blockNumber\":75,\"logIndex\":0,\"transactionHash\":\"0x9999c831c418d3798a792536fb06d6171ff46673081edc60e14ba45e0bc0c552\",\"transactionIndex\":0,\"transactionLogIndex\":\"0x0\",\"type\":\"mined\",\"id\":\"log_4532c12f\",\"returnValues\":{\"0\":\"0xCDe4070Df69eAA767C135f7940A4dF3DCD467765\",\"1\":\"1\",\"2\":\"0x3132333435363700000000000000000000000000000000000000000000000000\",\"3\":\"0x47656f7267650000000000000000000000000000000000000000000000000000\",\"4\":\"0x736f6d657468696e67736f6d657468696e67636f7374636f6465000000000000\",\"user\":\"0xCDe4070Df69eAA767C135f7940A4dF3DCD467765\",\"role\":\"1\",\"empId\":\"0x3132333435363700000000000000000000000000000000000000000000000000\",\"username\":\"0x47656f7267650000000000000000000000000000000000000000000000000000\",\"costCode\":\"0x736f6d657468696e67736f6d657468696e67636f7374636f6465000000000000\"},\"event\":\"UserAdded\",\"signature\":\"0x57d647812174c31265e287b98aa89c54fdf6453281371a1afe25687c028deb1c\",\"raw\":{\"data\":\"0x000000000000000000000000cde4070df69eaa767c135f7940a4df3dcd4677650000000000000000000000000000000000000000000000000000000000000001313233343536370000000000000000000000000000000000000000000000000047656f7267650000000000000000000000000000000000000000000000000000736f6d657468696e67736f6d657468696e67636f7374636f6465000000000000\",\"topics\":[\"0x57d647812174c31265e287b98aa89c54fdf6453281371a1afe25687c028deb1c\"]}}}}}"
+				}
+			]
+		},
+		{
+			"name": "createUser Employee emp1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\": \"password\", \n\t\"role\": 2, \n\t\"employeeId\": \"4\", \n\t\"costcode\": \"5000000100\", \n\t\"username\": \"emp1\",\n\t\"location\": \"Washington, DC\",\n\t\"excessCostCode\": \"5000000100\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/admin/createUser",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"createUser"
+					]
+				},
+				"description": "Create a new user"
+			},
+			"response": [
+				{
+					"id": "6acd0785-053a-4a51-8752-3516e8ff299c",
+					"name": "createUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"password\": \"poop\", \n\t\"role\": 1, \n\t\"employeeId\": \"1234567\", \n\t\"costcode\": \"somethingsomethingcostcode\", \n\t\"username\": \"George\"\n}"
+						},
+						"url": {
+							"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/admin/createUser",
+							"protocol": "http",
+							"host": [
+								"ec2-52-91-125-113",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"createUser"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2353",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 31 Jan 2018 20:36:12 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"931-kYuuetpGPI6vt7/4E9bEflWmWW4\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 1137,
+					"body": "{\"account\":\"0xCDe4070Df69eAA767C135f7940A4dF3DCD467765\",\"tx\":{\"blockHash\":\"0x1bc5ee2b68f3e330fb73374530db491078cff655be26f224ab1e42f1a1c2b225\",\"blockNumber\":75,\"contractAddress\":null,\"cumulativeGasUsed\":357672,\"gasUsed\":357672,\"logsBloom\":\"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000002000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\"root\":null,\"transactionHash\":\"0x9999c831c418d3798a792536fb06d6171ff46673081edc60e14ba45e0bc0c552\",\"transactionIndex\":0,\"events\":{\"UserAdded\":{\"address\":\"0xC08D56ed8cc7A4E0Ba314588051d1F7FaeF563d0\",\"blockHash\":\"0x1bc5ee2b68f3e330fb73374530db491078cff655be26f224ab1e42f1a1c2b225\",\"blockNumber\":75,\"logIndex\":0,\"transactionHash\":\"0x9999c831c418d3798a792536fb06d6171ff46673081edc60e14ba45e0bc0c552\",\"transactionIndex\":0,\"transactionLogIndex\":\"0x0\",\"type\":\"mined\",\"id\":\"log_4532c12f\",\"returnValues\":{\"0\":\"0xCDe4070Df69eAA767C135f7940A4dF3DCD467765\",\"1\":\"1\",\"2\":\"0x3132333435363700000000000000000000000000000000000000000000000000\",\"3\":\"0x47656f7267650000000000000000000000000000000000000000000000000000\",\"4\":\"0x736f6d657468696e67736f6d657468696e67636f7374636f6465000000000000\",\"user\":\"0xCDe4070Df69eAA767C135f7940A4dF3DCD467765\",\"role\":\"1\",\"empId\":\"0x3132333435363700000000000000000000000000000000000000000000000000\",\"username\":\"0x47656f7267650000000000000000000000000000000000000000000000000000\",\"costCode\":\"0x736f6d657468696e67736f6d657468696e67636f7374636f6465000000000000\"},\"event\":\"UserAdded\",\"signature\":\"0x57d647812174c31265e287b98aa89c54fdf6453281371a1afe25687c028deb1c\",\"raw\":{\"data\":\"0x000000000000000000000000cde4070df69eaa767c135f7940a4df3dcd4677650000000000000000000000000000000000000000000000000000000000000001313233343536370000000000000000000000000000000000000000000000000047656f7267650000000000000000000000000000000000000000000000000000736f6d657468696e67736f6d657468696e67636f7374636f6465000000000000\",\"topics\":[\"0x57d647812174c31265e287b98aa89c54fdf6453281371a1afe25687c028deb1c\"]}}}}}"
+				}
+			]
+		},
+		{
+			"name": "transactions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\": \"password\", \n\t\"role\": 2, \n\t\"employeeId\": \"3\", \n\t\"costcode\": \"5000000100\", \n\t\"username\": \"emp1\",\n\t\"location\": \"Washington, DC\",\n\t\"excessCostCode\": \"5000000100\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/transactions",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"transactions"
+					]
+				},
+				"description": "Create a new user"
+			},
+			"response": [
+				{
+					"id": "6102807d-606c-4593-978e-5487d4d04a93",
+					"name": "createUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"password\": \"poop\", \n\t\"role\": 1, \n\t\"employeeId\": \"1234567\", \n\t\"costcode\": \"somethingsomethingcostcode\", \n\t\"username\": \"George\"\n}"
+						},
+						"url": {
+							"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/admin/createUser",
+							"protocol": "http",
+							"host": [
+								"ec2-52-91-125-113",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"createUser"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2353",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 31 Jan 2018 20:36:12 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"931-kYuuetpGPI6vt7/4E9bEflWmWW4\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 1137,
+					"body": "{\"account\":\"0xCDe4070Df69eAA767C135f7940A4dF3DCD467765\",\"tx\":{\"blockHash\":\"0x1bc5ee2b68f3e330fb73374530db491078cff655be26f224ab1e42f1a1c2b225\",\"blockNumber\":75,\"contractAddress\":null,\"cumulativeGasUsed\":357672,\"gasUsed\":357672,\"logsBloom\":\"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000002000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\"root\":null,\"transactionHash\":\"0x9999c831c418d3798a792536fb06d6171ff46673081edc60e14ba45e0bc0c552\",\"transactionIndex\":0,\"events\":{\"UserAdded\":{\"address\":\"0xC08D56ed8cc7A4E0Ba314588051d1F7FaeF563d0\",\"blockHash\":\"0x1bc5ee2b68f3e330fb73374530db491078cff655be26f224ab1e42f1a1c2b225\",\"blockNumber\":75,\"logIndex\":0,\"transactionHash\":\"0x9999c831c418d3798a792536fb06d6171ff46673081edc60e14ba45e0bc0c552\",\"transactionIndex\":0,\"transactionLogIndex\":\"0x0\",\"type\":\"mined\",\"id\":\"log_4532c12f\",\"returnValues\":{\"0\":\"0xCDe4070Df69eAA767C135f7940A4dF3DCD467765\",\"1\":\"1\",\"2\":\"0x3132333435363700000000000000000000000000000000000000000000000000\",\"3\":\"0x47656f7267650000000000000000000000000000000000000000000000000000\",\"4\":\"0x736f6d657468696e67736f6d657468696e67636f7374636f6465000000000000\",\"user\":\"0xCDe4070Df69eAA767C135f7940A4dF3DCD467765\",\"role\":\"1\",\"empId\":\"0x3132333435363700000000000000000000000000000000000000000000000000\",\"username\":\"0x47656f7267650000000000000000000000000000000000000000000000000000\",\"costCode\":\"0x736f6d657468696e67736f6d657468696e67636f7374636f6465000000000000\"},\"event\":\"UserAdded\",\"signature\":\"0x57d647812174c31265e287b98aa89c54fdf6453281371a1afe25687c028deb1c\",\"raw\":{\"data\":\"0x000000000000000000000000cde4070df69eaa767c135f7940a4df3dcd4677650000000000000000000000000000000000000000000000000000000000000001313233343536370000000000000000000000000000000000000000000000000047656f7267650000000000000000000000000000000000000000000000000000736f6d657468696e67736f6d657468696e67636f7374636f6465000000000000\",\"topics\":[\"0x57d647812174c31265e287b98aa89c54fdf6453281371a1afe25687c028deb1c\"]}}}}}"
+				}
+			]
+		},
+		{
+			"name": "deviceInventory",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\": \"password\", \n\t\"role\": 2, \n\t\"employeeId\": \"3\", \n\t\"costcode\": \"5000000100\", \n\t\"username\": \"emp1\",\n\t\"location\": \"Washington, DC\",\n\t\"excessCostCode\": \"5000000100\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/api/deviceInventory",
+					"protocol": "http",
+					"host": [
+						"ec2-52-91-125-113",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deviceInventory"
+					]
+				},
+				"description": "Create a new user"
+			},
+			"response": [
+				{
+					"id": "d5076fa8-bd4a-4d6c-bb02-5c2273b59e0b",
+					"name": "createUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"password\": \"poop\", \n\t\"role\": 1, \n\t\"employeeId\": \"1234567\", \n\t\"costcode\": \"somethingsomethingcostcode\", \n\t\"username\": \"George\"\n}"
+						},
+						"url": {
+							"raw": "http://ec2-52-91-125-113.compute-1.amazonaws.com:3000/admin/createUser",
+							"protocol": "http",
+							"host": [
+								"ec2-52-91-125-113",
+								"compute-1",
+								"amazonaws",
+								"com"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"createUser"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2353",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 31 Jan 2018 20:36:12 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"931-kYuuetpGPI6vt7/4E9bEflWmWW4\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 1137,
+					"body": "{\"account\":\"0xCDe4070Df69eAA767C135f7940A4dF3DCD467765\",\"tx\":{\"blockHash\":\"0x1bc5ee2b68f3e330fb73374530db491078cff655be26f224ab1e42f1a1c2b225\",\"blockNumber\":75,\"contractAddress\":null,\"cumulativeGasUsed\":357672,\"gasUsed\":357672,\"logsBloom\":\"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000002000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\"root\":null,\"transactionHash\":\"0x9999c831c418d3798a792536fb06d6171ff46673081edc60e14ba45e0bc0c552\",\"transactionIndex\":0,\"events\":{\"UserAdded\":{\"address\":\"0xC08D56ed8cc7A4E0Ba314588051d1F7FaeF563d0\",\"blockHash\":\"0x1bc5ee2b68f3e330fb73374530db491078cff655be26f224ab1e42f1a1c2b225\",\"blockNumber\":75,\"logIndex\":0,\"transactionHash\":\"0x9999c831c418d3798a792536fb06d6171ff46673081edc60e14ba45e0bc0c552\",\"transactionIndex\":0,\"transactionLogIndex\":\"0x0\",\"type\":\"mined\",\"id\":\"log_4532c12f\",\"returnValues\":{\"0\":\"0xCDe4070Df69eAA767C135f7940A4dF3DCD467765\",\"1\":\"1\",\"2\":\"0x3132333435363700000000000000000000000000000000000000000000000000\",\"3\":\"0x47656f7267650000000000000000000000000000000000000000000000000000\",\"4\":\"0x736f6d657468696e67736f6d657468696e67636f7374636f6465000000000000\",\"user\":\"0xCDe4070Df69eAA767C135f7940A4dF3DCD467765\",\"role\":\"1\",\"empId\":\"0x3132333435363700000000000000000000000000000000000000000000000000\",\"username\":\"0x47656f7267650000000000000000000000000000000000000000000000000000\",\"costCode\":\"0x736f6d657468696e67736f6d657468696e67636f7374636f6465000000000000\"},\"event\":\"UserAdded\",\"signature\":\"0x57d647812174c31265e287b98aa89c54fdf6453281371a1afe25687c028deb1c\",\"raw\":{\"data\":\"0x000000000000000000000000cde4070df69eaa767c135f7940a4df3dcd4677650000000000000000000000000000000000000000000000000000000000000001313233343536370000000000000000000000000000000000000000000000000047656f7267650000000000000000000000000000000000000000000000000000736f6d657468696e67736f6d657468696e67636f7374636f6465000000000000\",\"topics\":[\"0x57d647812174c31265e287b98aa89c54fdf6453281371a1afe25687c028deb1c\"]}}}}}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "06f803d6-18e0-4509-823e-29c2af90ceed",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "8eeb28f5-9015-4070-a096-66e33ef40e67",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

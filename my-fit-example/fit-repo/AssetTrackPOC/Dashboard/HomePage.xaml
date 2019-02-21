@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AssetTrackPOC.Dashboard.HomePage" BackgroundColor="#f2f2f2">
+    <ContentPage.Content>
+         <RelativeLayout x:Name ="activeRl" Padding="0">
+        <StackLayout
+                RelativeLayout.WidthConstraint =
+      "{ConstraintExpression Type=RelativeToParent,
+                             Property=Width,
+                             Factor=1.0,
+                             Constant=0}"
+    RelativeLayout.HeightConstraint =
+      "{ConstraintExpression Type=RelativeToParent,
+                             Property=Height,
+                             Factor=1.0,
+                             Constant=0}">
+            <StackLayout BackgroundColor="White" HorizontalOptions="Fill" HeightRequest="80">
+                    <Label x:Name = "AccountTypeTitle" Text="" FontSize="20" HorizontalOptions="CenterAndExpand" TextColor="#587380" Margin="0,16,0,0" FontAttributes="Bold"/>
+<!--                <Label Text="YOUR ASSIGNED DEVICE" FontSize="12" HorizontalOptions="CenterAndExpand" TextColor="Silver" Margin="0,-2,0,0" />-->
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label Text="Asset ID:" FontSize="14" TextColor="Black" />
+                    <Label x:Name="currentAssetIdLbl" Text="234567" FontSize="14" TextColor="#ffa500" />
+                    <Label Text=" | " FontSize="14" TextColor="Black" />
+                    <Label x:Name = "assetModel" Text="Mobile Phone" FontSize="14" TextColor="#ffa500" />
+                </StackLayout>
+            </StackLayout>
+            <ScrollView x:Name="menuWrapper" VerticalOptions="Fill">
+                <StackLayout x:Name="homeOptions" VerticalOptions="Fill" HorizontalOptions="Fill" />
+            </ScrollView>
+        </StackLayout>
+            <StackLayout x:Name="loadingOverlayHome" IsVisible="true" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Spacing="0" BackgroundColor="#B3000000" 
+                RelativeLayout.WidthConstraint =
+      "{ConstraintExpression Type=RelativeToParent,
+                             Property=Width,
+                             Factor=1.0,
+                             Constant=0}"
+    RelativeLayout.HeightConstraint =
+      "{ConstraintExpression Type=RelativeToParent,
+                             Property=Height,
+                             Factor=1.0,
+                             Constant=0}">
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <ActivityIndicator x:Name="indicator" IsRunning="true" Color="White" />
+                <Label Text="Please Wait..." TextColor="White" FontSize="16" />
+            </StackLayout>
+        </StackLayout>
+            </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

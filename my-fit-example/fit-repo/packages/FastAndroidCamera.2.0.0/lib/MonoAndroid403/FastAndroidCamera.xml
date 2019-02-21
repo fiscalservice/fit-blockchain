@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FastAndroidCamera</name>
+    </assembly>
+    <members>
+        <member name="T:ApxLabs.FastAndroidCamera.CameraExtensions">
+             <summary>
+             Extends the <see cref="T:Android.Hardware.Camera" /> class with methods that take <see cref="T:ApxLabs.FastAndroidCamera.FastJavaByteArray" />
+             instances as parameters instead of raw <see cref="T:System.IntPtr" /> values.
+             </summary>
+            </member>
+        <member name="M:ApxLabs.FastAndroidCamera.CameraExtensions.AddCallbackBuffer(Android.Hardware.Camera,ApxLabs.FastAndroidCamera.FastJavaByteArray)">
+             <summary>
+             Adds a pre-allocated buffer to the preview callback buffer queue. Applications can add one or more buffers
+             to the queue. When a preview frame arrives and there is still at least one available buffer, the buffer will
+             be used and removed from the queue. Then preview callback is invoked with the buffer. If a frame arrives and
+             there is no buffer left, the frame is discarded. Applications should add buffers back when they finish
+             processing the data in them.
+             </summary>
+             <param name="self">Camera object.</param>
+             <param name="callbackBuffer">The buffer to add to the queue.</param>
+            </member>
+        <member name="M:ApxLabs.FastAndroidCamera.CameraExtensions.SetNonMarshalingPreviewCallback(Android.Hardware.Camera,ApxLabs.FastAndroidCamera.INonMarshalingPreviewCallback)">
+             <summary>
+             Installs a callback to be invoked for every preview frame in addition to displaying them on the screen. The
+             callback will provide a reference to the Java array instead of copying it into a new CLR array. The callback
+             will be repeatedly called for as long as preview is active. This method can be called at any time,
+             even while preview is live. Any other preview callbacks are overridden.
+             </summary>
+             <param name="self">Camera object.</param>
+             <param name="cb">A callback object that receives a copy of each preview frame, or null to stop receiving callbacks.</param>
+            </member>
+        <member name="M:ApxLabs.FastAndroidCamera.CameraExtensions.SetNonMarshalingOneShotPreviewCallback(Android.Hardware.Camera,ApxLabs.FastAndroidCamera.INonMarshalingPreviewCallback)">
+             <summary>
+             <para>
+             Installs a callback to be invoked for every preview frame, using buffers supplied with
+             <see cref="M:ApxLabs.FastAndroidCamera.CameraExtensions.AddCallbackBuffer(Android.Hardware.Camera,ApxLabs.FastAndroidCamera.FastJavaByteArray)" />(FastJavaByteArray), in addition to displaying them on the screen. The
+             callback will be repeatedly called for as long as preview is active and buffers are available. Any other
+             preview callbacks are overridden.
+             </para>
+             <para>
+             The purpose of this method is to improve preview efficiency and frame rate by allowing preview frame memory
+             reuse.You must call <see cref="M:ApxLabs.FastAndroidCamera.CameraExtensions.AddCallbackBuffer(Android.Hardware.Camera,ApxLabs.FastAndroidCamera.FastJavaByteArray)" />(FastJavaByteArray) at some point -- before or after
+             calling this method -- or no callbacks will received.
+             </para>
+             <para>
+             The buffer queue will be cleared if this method is called with a null callback, or if
+             <see cref="M:Android.Hardware.Camera.SetPreviewCallback(Android.Hardware.Camera.IPreviewCallback)" />(Camera.PreviewCallback),
+             <see cref="M:ApxLabs.FastAndroidCamera.CameraExtensions.SetNonMarshalingPreviewCallback(Android.Hardware.Camera,ApxLabs.FastAndroidCamera.INonMarshalingPreviewCallback)" />(INonMarshalingPreviewCallback),
+             <see cref="M:Android.Hardware.Camera.SetOneShotPreviewCallback(Android.Hardware.Camera.IPreviewCallback)" />(Camera.PreviewCallback), or
+             <see cref="M:ApxLabs.FastAndroidCamera.CameraExtensions.SetNonMarshalingOneShotPreviewCallback(Android.Hardware.Camera,ApxLabs.FastAndroidCamera.INonMarshalingPreviewCallback)" /> is called.
+             </para>
+             </summary>
+             <param name="self">Camera object.</param>
+             <param name="cb">A callback object that receives a copy of the preview frame, or null to stop receiving callbacks and clear the buffer queue.</param>
+            </member>
+        <member name="T:ApxLabs.FastAndroidCamera.INonMarshalingPreviewCallback">
+             <summary>
+             Callback interface used to deliver references to Java arrays containing preview frames as they are displayed.
+             </summary>
+            </member>
+        <member name="M:ApxLabs.FastAndroidCamera.INonMarshalingPreviewCallback.OnPreviewFrame(System.IntPtr,Android.Hardware.Camera)">
+             <summary>
+             Called as preview frames are displayed. This callback is invoked on the event thread <see cref="M:Android.Hardware.Camera.Open(System.Int32)" /> was called from.
+             </summary>
+             <param name="data">
+             The contents of the preview frame in the format defined by <see cref="T:Android.Graphics.ImageFormat" />, which
+             can be queried with <see cref="P:Android.Hardware.Camera.Parameters.PreviewFormat" />. If
+             <see cref="P:Android.Hardware.Camera.Parameters.PreviewFormat" /> is never set, the default will be the YCbCr_420_SP (NV21) format.
+             </param>
+             <param name="camera">The Camera service object.</param>
+            </member>
+        <member name="T:ApxLabs.FastAndroidCamera.FastJavaByteArray">
+             <summary>
+             A wrapper around a Java array that reads elements directly from the pointer instead of through expensive JNI calls.
+             </summary>
+            </member>
+        <member name="M:ApxLabs.FastAndroidCamera.FastJavaByteArray.#ctor(System.Int32)">
+             <summary>
+             Creates a new FastJavaByteArray with the given number of bytes reserved.
+             </summary>
+             <param name="length">Number of bytes to reserve</param>
+            </member>
+        <member name="M:ApxLabs.FastAndroidCamera.FastJavaByteArray.#ctor(System.IntPtr,System.Boolean)">
+             <summary>
+             Creates a FastJavaByteArray wrapper around an existing Java/JNI byte array
+             </summary>
+             <param name="handle">Native Java array handle</param>
+             <param name="readOnly">Whether to consider this byte array read-only</param>
+            </member>
+        <member name="M:ApxLabs.FastAndroidCamera.FastJavaByteArray.Finalize">
+             <summary>
+             Releases unmanaged resources and performs other cleanup operations before the
+             <see cref="T:ApxLabs.FastAndroidCamera.FastJavaByteArray" /> is reclaimed by garbage collection.
+             </summary>
+            </member>
+        <member name="M:ApxLabs.FastAndroidCamera.FastJavaByteArray.Dispose">
+             <summary>
+             Releases all resource used by the <see cref="T:ApxLabs.FastAndroidCamera.FastJavaByteArray" /> object.
+             </summary>
+             <remarks>Call <see cref="M:ApxLabs.FastAndroidCamera.FastJavaByteArray.Dispose" /> when you are finished using the
+             <see cref="T:ApxLabs.FastAndroidCamera.FastJavaByteArray" />. The <see cref="M:ApxLabs.FastAndroidCamera.FastJavaByteArray.Dispose" /> method leaves the
+             <see cref="T:ApxLabs.FastAndroidCamera.FastJavaByteArray" /> in an unusable state. After calling
+             <see cref="M:ApxLabs.FastAndroidCamera.FastJavaByteArray.Dispose" />, you must release all references to the
+             <see cref="T:ApxLabs.FastAndroidCamera.FastJavaByteArray" /> so the garbage collector can reclaim the memory that
+             the <see cref="T:ApxLabs.FastAndroidCamera.FastJavaByteArray" /> was occupying.</remarks>
+            </member>
+        <member name="P:ApxLabs.FastAndroidCamera.FastJavaByteArray.Count">
+             <summary>
+             Count of bytes
+             </summary>
+            </member>
+        <member name="P:ApxLabs.FastAndroidCamera.FastJavaByteArray.IsReadOnly">
+             <summary>
+             Gets a value indicating whether this byte array is read only.
+             </summary>
+             <value><c>true</c> if read only; otherwise, <c>false</c>.</value>
+            </member>
+        <member name="P:ApxLabs.FastAndroidCamera.FastJavaByteArray.Item(System.Int32)">
+             <summary>
+             Indexer
+             </summary>
+             <param name="index">Index of byte</param>
+             <returns>Byte at the given index</returns>
+            </member>
+        <member name="M:ApxLabs.FastAndroidCamera.FastJavaByteArray.Add(System.Byte)">
+             <summary>
+             Adds a single byte to the list. Not supported
+             </summary>
+             <param name="item">byte to add</param>
+            </member>
+        <member name="M:ApxLabs.FastAndroidCamera.FastJavaByteArray.Clear">
+             <summary>
+             Not supported
+             </summary>
+            </member>
+        <member name="M:ApxLabs.FastAndroidCamera.FastJavaByteArray.Contains(System.Byte)">
+             <summary>
+             Returns true if the item is found int he array
+             </summary>
+             <param name="item">Item to find</param>
+             <returns>True if the item is found</returns>
+            </member>
+        <member name="M:ApxLabs.FastAndroidCamera.FastJavaByteArray.CopyTo(System.Byte[],System.Int32)">
+             <summary>
+             Copies the contents of the FastJavaByteArray into a byte array
+             </summary>
+             <param name="array">The array to copy to.</param>
+             <param name="arrayIndex">The zero-based index into the destination array where CopyTo should start.</param>
+            </member>
+        <member name="M:ApxLabs.FastAndroidCamera.FastJavaByteArray.GetEnumerator">
+             <summary>
+             Retreives enumerator
+             </summary>
+             <returns>Enumerator</returns>
+            </member>
+        <member name="M:ApxLabs.FastAndroidCamera.FastJavaByteArray.System#Collections#IEnumerable#GetEnumerator">
+             <summary>
+             Retreives enumerator
+             </summary>
+             <returns>Enumerator</returns>
+            </member>
+        <member name="M:ApxLabs.FastAndroidCamera.FastJavaByteArray.IndexOf(System.Byte)">
+             <summary>
+             Gets the first index of the given value
+             </summary>
+             <param name="item">Item to search for</param>
+             <returns>Index of found item</returns>
+            </member>
+        <member name="M:ApxLabs.FastAndroidCamera.FastJavaByteArray.Insert(System.Int32,System.Byte)">
+             <summary>
+             Not supported
+             </summary>
+             <param name="index"></param>
+             <param name="item"></param>
+            </member>
+        <member name="M:ApxLabs.FastAndroidCamera.FastJavaByteArray.Remove(System.Byte)">
+             <summary>
+             Not supported
+             </summary>
+             <param name="item"></param>
+             <returns></returns>
+            </member>
+        <member name="M:ApxLabs.FastAndroidCamera.FastJavaByteArray.RemoveAt(System.Int32)">
+             <summary>
+             Not supported
+             </summary>
+             <param name="index"></param>
+            </member>
+        <member name="P:ApxLabs.FastAndroidCamera.FastJavaByteArray.Raw">
+             <summary>
+             Gets the raw pointer to the underlying data.
+             </summary>
+            </member>
+        <member name="P:ApxLabs.FastAndroidCamera.FastJavaByteArray.Handle">
+             <summary>
+             Gets the handle of the Java reference to the array.
+             </summary>
+             <value>The handle.</value>
+            </member>
+        <member name="P:ApxLabs.FastAndroidCamera.FastJavaByteArrayEnumerator.Current">
+             <summary>
+             Gets the current byte in the collection.
+             </summary>
+            </member>
+        <member name="M:ApxLabs.FastAndroidCamera.FastJavaByteArrayEnumerator.Dispose">
+             <summary>
+             Releases all resource used by the <see cref="T:ApxLabs.FastAndroidCamera.FastJavaByteArrayEnumerator" /> object.
+             </summary>
+             <remarks>Call <see cref="M:ApxLabs.FastAndroidCamera.FastJavaByteArrayEnumerator.Dispose" /> when you are finished using the
+             <see cref="T:ApxLabs.FastAndroidCamera.FastJavaByteArrayEnumerator" />. The <see cref="M:ApxLabs.FastAndroidCamera.FastJavaByteArrayEnumerator.Dispose" /> method leaves the
+             <see cref="T:ApxLabs.FastAndroidCamera.FastJavaByteArrayEnumerator" /> in an unusable state. After calling
+             <see cref="M:ApxLabs.FastAndroidCamera.FastJavaByteArrayEnumerator.Dispose" />, you must release all references to the
+             <see cref="T:ApxLabs.FastAndroidCamera.FastJavaByteArrayEnumerator" /> so the garbage collector can reclaim the
+             memory that the <see cref="T:ApxLabs.FastAndroidCamera.FastJavaByteArrayEnumerator" /> was occupying.</remarks>
+            </member>
+        <member name="M:ApxLabs.FastAndroidCamera.FastJavaByteArrayEnumerator.MoveNext">
+             <summary>
+             Advances the enumerator to the next element of the collection.
+             </summary>
+             <returns><c>true</c> if the enumerator was successfully advanced to the next element; <c>false</c> if the enumerator has passed the end of the collection.</returns>
+            </member>
+        <member name="M:ApxLabs.FastAndroidCamera.FastJavaByteArrayEnumerator.Reset">
+             <summary>
+             Sets the enumerator to its initial position, which is before the first element in the collection.
+             </summary>
+            </member>
+        <member name="P:ApxLabs.FastAndroidCamera.FastJavaByteArrayEnumerator.System#Collections#IEnumerator#Current">
+             <summary>
+             Gets the current element in the collection.
+             </summary>
+             <value>The system. collections. IE numerator. current.</value>
+            </member>
+    </members>
+</doc>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AssetTrackPOC.Dashboard.IngestDevicePage" BackgroundColor="#f2f2f2">
+    <ContentPage.Content>
+        <RelativeLayout Padding="0">
+            <ScrollView Padding="0" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,&#xA;                             Property=Width,&#xA;                             Factor=1.0,&#xA;                             Constant=0}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,&#xA;                             Property=Height,&#xA;                             Factor=1.0,&#xA;                             Constant=0}">
+                <RelativeLayout x:Name="deviceInfoRl"/>
+            </ScrollView> 
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>
