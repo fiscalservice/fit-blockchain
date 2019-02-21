@@ -47,10 +47,7 @@ The following diagram outlines the tech components used in this solution:
 
 This solution provides near real-time, uncontested device inventory and alleviates PM and regional property custodians from having to perform an annual device inventory manually. Rather, the Blockchain app serves as the mechanism for recording a live inventory to capture employee usage of the phones. The following diagram describes the tokenization process of creating digital assets onto the blockchain that represent physical devices:
 
-<p align="center">
-  <img src="/FIT_Flow.PNG"  width="420" height="420">
-</p>
-
+![Screenshot](FIT_Flow.PNG)
 
 ## Setup Instructions
 
