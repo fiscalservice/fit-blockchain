@@ -1,0 +1,216 @@
+#!/usr/bin/env node
+const program = require('commander');
+// Require logic.js file and extract controller functions using JS destructuring assignment
+const { prompt } = require('inquirer'); // require inquirerjs library
+
+
+const { createAdminRoleManager, createUser, deviceInfo, newDevice, transferDevice, viewUnauthorized, viewTransfers, viewPath, login} = require('./logic');
+
+program
+  .version('0.0.1')
+  .description('FIT Asset Tracker');
+
+
+
+const questions01 = [
+  {
+    type : 'input',
+    name : 'adminAccount',
+    message : '(Create Role Manager) Enter Admin account ...'
+  }
+];
+
+
+program
+  .command('createAdminRoleManager')
+  .alias('a')
+  .description('Creates a Role Manager contract from a set admin account')
+  .action(() => { prompt(questions01).then(answers => createAdminRoleManager(answers));
+  });
+
+
+
+const questions1 = [
+  {
+    type : 'input',
+    name : 'account',
+    message : '(Create User) Enter account ...'
+  },
+  {
+    type : 'input',
+    name : 'employeeID',
+    message : '(Create User) Enter employeeID ...'
+  },
+  {
+    type : 'input',
+    name : 'role',
+ message : '(Create User) Enter role ...'
+  },
+  {
+    type : 'input',
+    name : 'costCode',
+    message : '(Create User) Enter Cost Code ...'
+  }
+];
+.........
+
+program
+  .command('createUser')
+  .alias('b')
+  .description('Create User with a role and map to their employeeID')
+  .action(() => {
+    prompt(questions1).then(answers => createUser((answers));
+  });
+
+const questions0 = [
+  {
+    type : 'input',
+    name : 'userName',
+    message : '(Login) Enter username ...'
+  },
+  {
+    type : 'input',
+    name : 'password',
+    message : '(Login) Enter password ...'
+  }
+];
+.........
+
+program
+  .command('login')
+  .alias('c')
+  .description('Login')
+  .action(() => { prompt(questions0).then(answers => login(answers));
+});
+
+
+
+const questions2 = [
+  {
+    type : 'input',
+    name : 'deviceID',
+    message : '(Device Info) Enter deviceID to obtain device information ...'
+  }
+];
+.........
+
+
+program
+  .command('deviceInfo')
+  .alias('i')
+  .description('Takes in a deviceID and returns an addresss for the device and other device into')
+  .action(() => {
+    prompt(questions2).then(answers => deviceInfo(answers));
+  });
+
+
+
+const questions3 = [
+  {
+    type : 'input',
+    name : 'assetID',
+    message : '(New Device) Enter assetID ...'
+  },
+  {
+    type : 'input',
+    name : 'EUSAddr',
+    message : '(New Device) Enter EUS Address ...'
+  },
+  {
+    type : 'input',
+    name : 'costCode',
+    message : '(New Device) Enter Cost Code ...'
+  }
+
+];
+.........
+
+
+program
+  .command('newDevice')
+  .alias('d')
+  .description('New Device')
+  .action(() => { prompt(questions3).then(answers =>
+    newDevice(answers));
+  });
+
+const questions4 = [
+  {
+    type : 'input',
+    name : 'assetID',
+ message : '(Transfer Device) Enter assetID ...'
+  },
+  {
+    type : 'input',
+    name : 'senderUserID',
+    message : '(Transfer Device) Enter senderUserID ...'
+  },
+  {
+    type : 'input',
+    name : 'recipientUserID',
+    message : '(Transfer Device) Enter recipientUserID ...'
+  }
+];
+.........
+
+
+program
+  .command('transferDevice')
+  .alias('t')
+  .description('Transfer Device')
+  .action(() => { prompt(questions4).then(answers =>
+    transferDevice(answers));
+  });
+
+
+
+const questions5 = [
+  {
+    type : 'input',
+    name : 'blocks',
+    message : '(View Unauthorized Logins) Enter number which representd the last number of blocks to check for unauthorized logins ...'
+  }
+];
+.........
+
+program
+  .command('viewUnauthorized')
+  .alias('u')
+  .description('View unauthorized logins in the past x blocks')
+  .action(() => { prompt(questions5).then(answers => viewUnauthorized(answers));
+  });
+
+const questions6 = [
+  {
+    type : 'input',
+    name : 'userID',
+ message : '(View Transfers) Enter userID to show transfers made by that ID ...'
+  }
+];
+.........
+
+program
+  .command('viewTransfers')
+  .alias('v')
+  .description('View transfers made by this userID')
+  .action(() => { prompt(questions6).then(answers => viewTransfers(answers));
+  });
+
+const questions7 = [
+  {
+    type : 'input',
+    name : 'deviceID',
+    message : '(View Device Transfer History) Enter deviceID to show transfer history ...'
+  }
+];
+.........
+
+
+program
+  .command('viewPath')
+  .alias('p')
+  .description('View Device Transfer History')
+  .action((deviceID) => { prompt(questions7).then(answers => viewPath(answers));
+  });
+
+program.parse(process.argv);

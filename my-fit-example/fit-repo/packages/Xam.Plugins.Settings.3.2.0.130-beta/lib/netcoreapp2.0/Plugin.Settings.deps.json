@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.0",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {
+      "Plugin.Settings/3.2.0.130": {
+        "dependencies": {
+          "Plugin.Settings.Abstractions": "3.2.0.130"
+        },
+        "runtime": {
+          "Plugin.Settings.dll": {}
+        }
+      },
+      "Plugin.Settings.Abstractions/3.2.0.130": {
+        "runtime": {
+          "Plugin.Settings.Abstractions.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Plugin.Settings/3.2.0.130": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Plugin.Settings.Abstractions/3.2.0.130": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

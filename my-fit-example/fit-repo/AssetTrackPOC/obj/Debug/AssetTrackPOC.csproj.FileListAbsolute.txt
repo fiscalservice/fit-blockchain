@@ -1,0 +1,91 @@
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/AssetTrackPOC.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/AssetTrackPOC.pdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/Newtonsoft.Json.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/Plugin.Connectivity.Abstractions.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/Plugin.Connectivity.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/Xamarin.Forms.Core.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/Xamarin.Forms.Platform.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/ZXing.Net.Mobile.Core.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/zxing.portable.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/ZXingNetMobile.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/Plugin.Connectivity.Abstractions.pdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/Plugin.Connectivity.Abstractions.xml
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/Plugin.Connectivity.pdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/Plugin.Connectivity.xml
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/Xamarin.Forms.Core.pdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/Xamarin.Forms.Core.dll.mdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/Xamarin.Forms.Core.xml
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/Xamarin.Forms.Xaml.pdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/Xamarin.Forms.Xaml.xml
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/bin/Debug/Newtonsoft.Json.xml
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/obj/Debug/AssetTrackPOC.csprojResolveAssemblyReference.cache
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/obj/Debug/AssetTrackPOC.csproj.CoreCompileInputs.cache
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/obj/Debug/AssetTrackPOC.App.xaml.g.cs
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/obj/Debug/AssetTrackPOC.AssetTrackPOCPage.xaml.g.cs
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/obj/Debug/AssetTrackPOC.Dashboard.HomePage.xaml.g.cs
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/obj/Debug/AssetTrackPOC.Dashboard.IngestDevicePage.xaml.g.cs
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/obj/Debug/AssetTrackPOC.Dashboard.InitiateTransferPage.xaml.g.cs
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/obj/Debug/AssetTrackPOC.Dashboard.InitiateCheckPage.xaml.g.cs
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/obj/Debug/AssetTrackPOC.Dashboard.DisposalPage.xaml.g.cs
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/obj/Debug/AssetTrackPOC.Dashboard.ViewTransfersPage.xaml.g.cs
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/obj/Debug/AssetTrackPOC.Dashboard.ViewDevicesPage.xaml.g.cs
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/obj/Debug/AssetTrackPOC.CustomCell.CustomTableCell.xaml.g.cs
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/obj/Debug/AssetTrackPOC.Dashboard.TransferTabs.ActiveTab.xaml.g.cs
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/obj/Debug/AssetTrackPOC.Dashboard.TransferTabs.HistoryTab.xaml.g.cs
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/obj/Debug/AssetTrackPOC.CustomCell.IngestDeviceCell.xaml.g.cs
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/obj/Debug/AssetTrackPOC.CustomCell.HomeMenuCell.xaml.g.cs
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/obj/Debug/AssetTrackPOC.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/AssetTrackPOC/obj/Debug/AssetTrackPOC.pdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/AssetTrackPOC.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/AssetTrackPOC.pdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/BouncyCastle.Crypto.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Nethereum.Portable.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Newtonsoft.Json.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Plugin.Connectivity.Abstractions.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Plugin.Connectivity.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Plugin.Settings.Abstractions.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Plugin.Settings.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/SQLite-net.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/SQLitePCLRaw.batteries_green.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/SQLitePCLRaw.batteries_v2.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/SQLitePCLRaw.core.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Xamarin.Forms.Core.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Xamarin.Forms.Platform.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/ZXing.Net.Mobile.Core.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/zxing.portable.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/ZXingNetMobile.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Plugin.Connectivity.Abstractions.pdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Plugin.Connectivity.Abstractions.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Plugin.Connectivity.pdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Plugin.Connectivity.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Xamarin.Forms.Core.pdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Xamarin.Forms.Core.dll.mdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Xamarin.Forms.Core.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Xamarin.Forms.Xaml.pdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Xamarin.Forms.Xaml.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Newtonsoft.Json.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Plugin.Settings.Abstractions.pdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Plugin.Settings.Abstractions.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/Plugin.Settings.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/SQLite-net.pdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/SQLite-net.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/bin/Debug/BouncyCastle.Crypto.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/obj/Debug/AssetTrackPOC.csproj.CoreCompileInputs.cache
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/obj/Debug/AssetTrackPOC.App.xaml.g.cs
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/obj/Debug/AssetTrackPOC.AssetTrackPOCPage.xaml.g.cs
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/obj/Debug/AssetTrackPOC.Dashboard.HomePage.xaml.g.cs
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/obj/Debug/AssetTrackPOC.Dashboard.IngestDevicePage.xaml.g.cs
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/obj/Debug/AssetTrackPOC.Dashboard.InitiateTransferPage.xaml.g.cs
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/obj/Debug/AssetTrackPOC.Dashboard.ViewDevicesPage.xaml.g.cs
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/obj/Debug/AssetTrackPOC.CustomCell.CustomTableCell.xaml.g.cs
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/obj/Debug/AssetTrackPOC.Dashboard.TransferTabs.ActiveTab.xaml.g.cs
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/obj/Debug/AssetTrackPOC.Dashboard.TransferTabs.HistoryTab.xaml.g.cs
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/obj/Debug/AssetTrackPOC.CustomCell.IngestDeviceCell.xaml.g.cs
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/obj/Debug/AssetTrackPOC.CustomCell.HomeMenuCell.xaml.g.cs
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/obj/Debug/AssetTrackPOC.CustomCell.MyDeviceCell.xaml.g.cs
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/obj/Debug/AssetTrackPOC.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/AssetTrackPOC/obj/Debug/AssetTrackPOC.pdb

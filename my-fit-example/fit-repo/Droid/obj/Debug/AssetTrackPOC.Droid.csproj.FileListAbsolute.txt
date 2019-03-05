@@ -1,0 +1,181 @@
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/AssetTrackPOC.Droid.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/AssetTrackPOC.Droid.pdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/com.damalfitano.AssetTrackPOC.apk
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/com.damalfitano.AssetTrackPOC-Signed.apk
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/AssetTrackPOC.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/FastAndroidCamera.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/FormsViewGroup.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Newtonsoft.Json.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Plugin.Connectivity.Abstractions.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Plugin.Connectivity.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Android.Support.Animated.Vector.Drawable.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Android.Support.Annotations.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Android.Support.Compat.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Android.Support.Core.UI.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Android.Support.Core.Utils.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Android.Support.Design.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Android.Support.Fragment.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Android.Support.Media.Compat.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Android.Support.Transition.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Android.Support.v4.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Android.Support.v7.AppCompat.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Android.Support.v7.CardView.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Android.Support.v7.MediaRouter.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Android.Support.v7.Palette.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Android.Support.v7.RecyclerView.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Android.Support.Vector.Drawable.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Forms.Core.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Forms.Platform.Android.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Forms.Platform.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/ZXing.Net.Mobile.Core.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/zxing.portable.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/ZXingNetMobile.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/AssetTrackPOC.pdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/FormsViewGroup.pdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/FormsViewGroup.dll.mdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Forms.Core.pdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Forms.Core.dll.mdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Forms.Core.xml
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Forms.Platform.Android.pdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Forms.Platform.Android.dll.mdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Forms.Xaml.pdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Xamarin.Forms.Xaml.xml
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Plugin.Connectivity.Abstractions.pdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Plugin.Connectivity.Abstractions.dll.mdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Plugin.Connectivity.Abstractions.xml
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Plugin.Connectivity.pdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Plugin.Connectivity.dll.mdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Plugin.Connectivity.xml
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/Newtonsoft.Json.xml
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/bin/Debug/FastAndroidCamera.xml
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/AssetTrackPOC.Droid.csprojResolveAssemblyReference.cache
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/AssetTrackPOC.Droid.csproj.CoreCompileInputs.cache
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/AssetTrackPOC.Droid.dll
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/AssetTrackPOC.Droid.pdb
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/android/bin/com.damalfitano.AssetTrackPOC.apk
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/res/layout/tabbar.xml
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/res/layout/toolbar.xml
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/res/values/styles.xml
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/res/drawable/icon.png
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/res/drawable-hdpi/icon.png
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/res/drawable-xhdpi/icon.png
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/res/drawable-xxhdpi/icon.png
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/res/drawable-hdpi/logo.png
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/res/drawable-xhdpi/logo.png
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/res/drawable-xxhdpi/logo.png
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/res/drawable/logo.png
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/res/drawable/devices.png
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/res/drawable/disposal.png
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/res/drawable/check.png
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/res/drawable/ingest.png
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/res/drawable/initiate.png
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/res/drawable/view.png
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/res/drawable/logo_bg.png
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/res/drawable/acceptt.png
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/R.cs.flag
+/Users/damalfitano/Documents/XamarinWorkspace/AssetTrackPOC 2/Droid/obj/Debug/uploadflags.txt
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/AssetTrackPOC.Droid.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/AssetTrackPOC.Droid.pdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/com.damalfitano.AssetTrackPOC.apk
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/com.damalfitano.AssetTrackPOC-Signed.apk
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/AssetTrackPOC.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/BouncyCastle.Crypto.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/FastAndroidCamera.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/FormsViewGroup.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Nethereum.Portable.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Newtonsoft.Json.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Plugin.Connectivity.Abstractions.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Plugin.Connectivity.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Plugin.Settings.Abstractions.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Plugin.Settings.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Android.Support.Animated.Vector.Drawable.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Android.Support.Annotations.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Android.Support.Compat.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Android.Support.Core.UI.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Android.Support.Core.Utils.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Android.Support.Design.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Android.Support.Fragment.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Android.Support.Media.Compat.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Android.Support.Transition.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Android.Support.v4.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Android.Support.v7.AppCompat.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Android.Support.v7.CardView.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Android.Support.v7.MediaRouter.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Android.Support.v7.Palette.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Android.Support.v7.RecyclerView.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Android.Support.Vector.Drawable.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Firebase.AppIndexing.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Firebase.Common.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Forms.Core.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Forms.Platform.Android.AppLinks.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Forms.Platform.Android.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Forms.Platform.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.GooglePlayServices.AppIndexing.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.GooglePlayServices.Base.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.GooglePlayServices.Basement.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.GooglePlayServices.Tasks.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/ZXing.Net.Mobile.Core.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/zxing.portable.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/ZXingNetMobile.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/AssetTrackPOC.pdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/FormsViewGroup.pdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/FormsViewGroup.dll.mdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Forms.Core.pdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Forms.Core.dll.mdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Forms.Core.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Forms.Platform.Android.pdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Forms.Platform.Android.dll.mdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Forms.Xaml.pdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Xamarin.Forms.Xaml.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Plugin.Connectivity.Abstractions.pdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Plugin.Connectivity.Abstractions.dll.mdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Plugin.Connectivity.Abstractions.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Plugin.Connectivity.pdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Plugin.Connectivity.dll.mdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Plugin.Connectivity.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Newtonsoft.Json.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/FastAndroidCamera.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Plugin.Settings.Abstractions.pdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Plugin.Settings.Abstractions.dll.mdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Plugin.Settings.Abstractions.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Plugin.Settings.pdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Plugin.Settings.dll.mdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/Plugin.Settings.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/bin/Debug/BouncyCastle.Crypto.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/AssetTrackPOC.Droid.csprojResolveAssemblyReference.cache
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/XbdMerge/Xamarin.GooglePlayServices.Basement.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/XbdMerge/Xamarin.GooglePlayServices.Tasks.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/XbdMerge/Xamarin.Firebase.Common.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/XbdMerge/Xamarin.GooglePlayServices.Base.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/XbdMerge/Xamarin.Firebase.AppIndexing.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/AssetTrackPOC.Droid.csproj.CoreCompileInputs.cache
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/AssetTrackPOC.Droid.dll
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/AssetTrackPOC.Droid.pdb
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/android/bin/com.damalfitano.AssetTrackPOC.apk
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/res/layout/tabbar.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/res/layout/toolbar.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/res/values/styles.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/res/drawable/icon.png
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/res/drawable-hdpi/icon.png
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/res/drawable-xhdpi/icon.png
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/res/drawable-xxhdpi/icon.png
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/res/drawable-hdpi/logo.png
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/res/drawable-xhdpi/logo.png
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/res/drawable-xxhdpi/logo.png
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/res/drawable/logo.png
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/res/drawable/devices.png
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/res/drawable/disposal.png
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/res/drawable/check.png
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/res/drawable/ingest.png
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/res/drawable/initiate.png
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/res/drawable/view.png
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/res/drawable/logo_bg.png
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/res/drawable/acceptt.png
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/res/drawable/splash_logo.png
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/res/drawable/splash_screen.xml
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/R.cs.flag
+/Users/damalfitano/Documents/AssetChainPOC/AssetChainMobile_POC/AssetTrackPOC/Droid/obj/Debug/uploadflags.txt
