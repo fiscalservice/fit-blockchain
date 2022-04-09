@@ -14,7 +14,7 @@
     "express-validation": "^1.0.2",
     "joi": "^14.3.0",
     "lodash": "^4.17.5",
-    "moment": "^2.20.1",
+    "moment": "^2.29.2",
     "pino": "^5.10.1",
     "qs": "^6.5.1",
     "replace-in-file": "^3.1.0",
