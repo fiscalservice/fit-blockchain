@@ -10,7 +10,7 @@
     "core-js": "^2.5.3",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
-    "moment": "^2.20.1",
+    "moment": "^2.29.2",
     "moment-timezone": "^0.5.14",
     "momentjs": "^1.0.0",
     "react": "^16.2.0",
