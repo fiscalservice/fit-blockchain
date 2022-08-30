@@ -11,7 +11,7 @@
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
     "moment": "^2.20.1",
-    "moment-timezone": "^0.5.14",
+    "moment-timezone": "^0.5.35",
     "momentjs": "^1.0.0",
     "react": "^16.2.0",
     "react-bootstrap": "^0.31.5",
